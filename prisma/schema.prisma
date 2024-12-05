@@ -1,0 +1,114 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum QuestionTypes {
+  IMAGE
+  VIDEO
+  TEXT
+  NEAREST
+  FILL
+}
+
+enum QuestionDifficulty {
+  EASY
+  MEDIUM
+  HARD
+  DEVIL
+  CYBER
+}
+
+model EndedRooms {
+  id             Int      @id @default(autoincrement())
+  player_count   Int
+  question_count Int
+  scores         Int[]
+  created_at     DateTime @default(now())
+
+  @@map("ended_rooms")
+}
+
+model Players {
+  id        Int     @id @default(autoincrement())
+  name      String
+  room_code String
+  room      Rooms   @relation(fields: [room_code], references: [code], onDelete: Cascade)
+  owner     Boolean @default(false)
+
+  @@map("players")
+}
+
+model Rooms {
+  code                String              @id @default(uuid())
+  name                String
+  question_count      Int
+  max_player_count    Int
+  difficulty          QuestionDifficulty
+  created_at          DateTime            @default(now())
+  players             Players[]
+  room_done_questions RoomDoneQuestions[]
+
+  @@map("rooms")
+}
+
+model RoomDoneQuestions {
+  room_code   String
+  question_id Int
+  room        Rooms     @relation(fields: [room_code], references: [code], onDelete: Cascade)
+  question    Questions @relation(fields: [question_id], references: [id], onDelete: Cascade)
+
+  @@id([room_code, question_id])
+  @@map("room_done_questions")
+}
+
+model Questions {
+  id                  Int                 @id @default(autoincrement())
+  version             Int                 @db.SmallInt
+  difficulty          QuestionDifficulty
+  type                QuestionTypes
+  question            String
+  src                 String?
+  room_done_questions RoomDoneQuestions[]
+  media_question      MediaQuestions?
+  nearest_question    NearestQuestions?
+  fill_question       FillQuestions?
+
+  @@map("questions")
+}
+
+model MediaQuestions {
+  question_id Int       @unique
+  question    Questions @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  candidates  String[]
+  answers     Int[]
+
+  @@map("media_questions")
+}
+
+model NearestQuestions {
+  question_id Int       @unique
+  question    Questions @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  answer      Float     @db.DoublePrecision
+
+  @@map("nearest_questions")
+}
+
+model FillQuestions {
+  question_id Int       @unique
+  question    Questions @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  candidates  String[]
+  answer      String
+
+  @@map("fill_questions")
+}
