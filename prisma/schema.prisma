@@ -41,12 +41,12 @@ model EndedRooms {
 }
 
 model Players {
-  id        Int     @id @default(autoincrement())
   name      String
   room_code String
   room      Rooms   @relation(fields: [room_code], references: [code], onDelete: Cascade)
   owner     Boolean @default(false)
 
+  @@id([name, room_code])
   @@map("players")
 }
 
@@ -56,6 +56,7 @@ model Rooms {
   question_count      Int
   max_player_count    Int
   difficulty          QuestionDifficulty
+  started             Boolean             @default(false)
   created_at          DateTime            @default(now())
   players             Players[]
   room_done_questions RoomDoneQuestions[]

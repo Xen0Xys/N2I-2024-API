@@ -1,6 +1,5 @@
 import {ClassSerializerInterceptor, Module} from "@nestjs/common";
 import {AppController} from "./app.controller";
-import {WebsocketModule} from "./websocket/websocket.module";
 import {ConfigModule} from "@nestjs/config";
 import {ScheduleModule} from "@nestjs/schedule";
 import {ThrottlerModule} from "@nestjs/throttler";
@@ -20,7 +19,6 @@ dotenv.config();
             limit: 60,
         }]),
         RoomsModule,
-        WebsocketModule,
     ],
     providers: [
         {

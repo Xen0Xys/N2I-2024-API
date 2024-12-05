@@ -1,9 +1,10 @@
-import {Body, Controller, Post} from "@nestjs/common";
-import {ApiTags} from "@nestjs/swagger";
+import {Body, Controller, Get, Post, Req, UseGuards} from "@nestjs/common";
+import {ApiBearerAuth, ApiTags} from "@nestjs/swagger";
 import {RoomsService} from "./rooms.service";
 import {CreateRoomDto} from "./models/dto/create-room.dto";
 import {TokenResponse} from "./models/responses/token.response";
 import {JoinRoomDto} from "./models/dto/join-room.dto";
+import {AuthGuard} from "./guards/auth.guard";
 
 @Controller("rooms")
 @ApiTags("Rooms")
@@ -32,5 +33,18 @@ export class RoomsController{
     @Post("join")
     async joinRoom(@Body() body: JoinRoomDto): Promise<TokenResponse>{
         return await this.roomsService.joinRoom(body);
+    }
+
+    /**
+     * Get the current room
+     *
+     * @throws {401} Unauthorized
+     * @throws {500} Internal server error
+     */
+    @Get("current")
+    @UseGuards(AuthGuard)
+    @ApiBearerAuth()
+    async getCurrentRoom(@Req() req: any): Promise<any>{
+        return await this.roomsService.getCurrentRoom(req.roomCode);
     }
 }

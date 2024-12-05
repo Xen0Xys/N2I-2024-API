@@ -6,6 +6,8 @@ import {CreateRoomDto} from "./models/dto/create-room.dto";
 import {JwtService} from "../../common/services/jwt.service";
 import {ConfigService} from "@nestjs/config";
 import {JoinRoomDto} from "./models/dto/join-room.dto";
+import {RoomsGateway} from "./rooms.gateway";
+import {RoomDataResponse} from "./models/responses/room-data.response";
 
 @Injectable()
 export class RoomsService{
@@ -13,6 +15,7 @@ export class RoomsService{
         private readonly prismaService: PrismaService,
         private readonly jwtService: JwtService,
         private readonly configService: ConfigService,
+        private readonly roomsGatewayService: RoomsGateway,
     ){}
 
     generateRoomCode(): string{
@@ -30,6 +33,7 @@ export class RoomsService{
                 players: {
                     create: {
                         name: createRoomDto.playerName,
+                        owner: true,
                     },
                 },
             },
@@ -52,12 +56,49 @@ export class RoomsService{
         });
         if(!room)
             throw new NotFoundException("Room not found");
+        if(room.started)
+            throw new ConflictException("Room has already started");
         if(room.players.length >= room.max_player_count)
             throw new ConflictException("Room is full");
         const token: string = this.jwtService.generateJWT({
             roomCode: room.code,
             playerName: body.playerName,
         }, "1d", this.configService.get<string>("JWT_SECRET"));
+        await this.prismaService.players.create({
+            data: {
+                name: body.playerName,
+                room_code: room.code,
+            },
+        });
+        await this.roomsGatewayService.onRoomUpdate(await this.getCurrentRoom(room.code));
         return new TokenResponse({token});
+    }
+
+    async getCurrentRoom(roomCode: string): Promise<RoomDataResponse>{
+        console.log(roomCode);
+        const room: Rooms = await this.prismaService.rooms.findUnique({
+            where: {
+                code: roomCode,
+            },
+        });
+        const players: any[] = await this.prismaService.players.findMany({
+            where: {
+                room_code: roomCode,
+            },
+        });
+        return new RoomDataResponse({
+            room: {
+                code: room.code,
+                name: room.name,
+                difficulty: room.difficulty,
+                questionCount: room.question_count,
+                maxPlayers: room.max_player_count,
+                started: room.started,
+            },
+            players: players.map((player: any) => ({
+                name: player.name,
+                owner: player.owner,
+            })),
+        });
     }
 }
