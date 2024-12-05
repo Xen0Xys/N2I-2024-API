@@ -6,6 +6,7 @@ import {ScheduleModule} from "@nestjs/schedule";
 import {ThrottlerModule} from "@nestjs/throttler";
 import * as dotenv from "dotenv";
 import {APP_INTERCEPTOR} from "@nestjs/core";
+import {RoomsModule} from "./modules/rooms/rooms.module";
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ dotenv.config();
             ttl: 60000,
             limit: 60,
         }]),
+        RoomsModule,
         WebsocketModule,
     ],
     providers: [
