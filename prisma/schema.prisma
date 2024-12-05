@@ -22,6 +22,7 @@ enum QuestionTypes {
 }
 
 enum QuestionDifficulty {
+  ANY
   EASY
   MEDIUM
   HARD
