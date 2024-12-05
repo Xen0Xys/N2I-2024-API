@@ -1,6 +1,6 @@
-import {ConflictException, Injectable, NotFoundException} from "@nestjs/common";
+import {ConflictException, ForbiddenException, Injectable, NotFoundException} from "@nestjs/common";
 import {PrismaService} from "../../common/services/prisma.service";
-import {Rooms} from "@prisma/client";
+import {Players, Rooms} from "@prisma/client";
 import {TokenResponse} from "./models/responses/token.response";
 import {CreateRoomDto} from "./models/dto/create-room.dto";
 import {JwtService} from "../../common/services/jwt.service";
@@ -8,6 +8,7 @@ import {ConfigService} from "@nestjs/config";
 import {JoinRoomDto} from "./models/dto/join-room.dto";
 import {RoomsGateway} from "./rooms.gateway";
 import {RoomDataResponse} from "./models/responses/room-data.response";
+import {EditRoomDto} from "./models/dto/edit-room.dto";
 
 @Injectable()
 export class RoomsService{
@@ -100,5 +101,28 @@ export class RoomsService{
                 owner: player.owner,
             })),
         });
+    }
+
+    async updateRoomSettings(roomCode: string, playerName: string, body: EditRoomDto){
+        const player: Players = await this.prismaService.players.findFirst({
+            where: {
+                name: playerName,
+                room_code: roomCode,
+            },
+        });
+        if(!player.owner)
+            throw new ForbiddenException("You are not the room owner");
+        await this.prismaService.rooms.update({
+            where: {
+                code: roomCode,
+            },
+            data: {
+                name: body.roomName,
+                max_player_count: body.maxPlayers,
+                question_count: body.questionCount,
+                difficulty: body.difficulty,
+            },
+        });
+        await this.roomsGatewayService.onRoomUpdate(await this.getCurrentRoom(roomCode));
     }
 }
