@@ -1,0 +1,3043 @@
+[
+    {
+        "id": 1,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel est l'objectif principal de l'association Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Préserver les forêts",
+                "Protéger les océans des déchets plastiques",
+                "Réduire les émissions de gaz à effet de serre",
+                "Promouvoir l'agriculture biologique"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 2,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel type d'énergie utilise le navire Race for Water pour fonctionner ?",
+        "specific": {
+            "candidates": [
+                "Énergie fossile",
+                "Énergie solaire, éolienne et hydrogène",
+                "Énergie nucléaire",
+                "Énergie marémotrice"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 3,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "En quelle année l'association Race for Water a-t-elle été fondée ?",
+        "specific": {
+            "candidates": [
+                "2005",
+                "2010",
+                "2012",
+                "2015"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 4,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quelle est la proportion estimée des déchets plastiques recyclés dans le monde selon Race for Water ?",
+        "specific": {
+            "candidates": [
+                "9%",
+                "20%",
+                "35%",
+                "50%"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 5,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Quel est le principal impact des plastiques sur les océans ?",
+        "specific": {
+            "candidates": [
+                "Augmentation des poissons dans les zones de pêche",
+                "Pollution et menace pour la faune marine",
+                "Réduction de la biodiversité terrestre",
+                "Augmentation de la température des océans"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 6,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quelle innovation technologique est promue par Race for Water pour réduire la pollution plastique ?",
+        "specific": {
+            "candidates": [
+                "L'incinération à grande échelle",
+                "La conversion des plastiques en énergie",
+                "L'enfouissement des plastiques",
+                "La production de plastiques biodégradables"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 7,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le slogan de Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Save the Forests",
+                "Act Today for Tomorrow",
+                "Preserve the Oceans",
+                "A Future Without Plastics"
+            ],
+            "answer": [3]
+        }
+    },
+    {
+        "id": 8,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel pourcentage des plastiques produits chaque année finit dans les océans selon Race for Water ?",
+        "specific": {
+            "candidates": [
+                "1%",
+                "8%",
+                "12%",
+                "25%"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 9,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Comment l'association Race for Water finance-t-elle ses projets innovants ?",
+        "specific": {
+            "candidates": [
+                "Avec des subventions gouvernementales uniquement",
+                "Avec des partenariats publics et privés",
+                "Avec des ventes de produits dérivés",
+                "Avec des taxes sur les plastiques"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 10,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Quel est l'un des principaux axes de sensibilisation de Race for Water ?",
+        "specific": {
+            "candidates": [
+                "La réduction des emballages plastiques",
+                "La réduction de la pêche intensive",
+                "L'exploitation des ressources marines",
+                "Le tourisme durable"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 11,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quelle est la mission principale de Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Protéger les forêts tropicales",
+                "Lutter contre la pollution plastique des océans",
+                "Préserver les espèces en danger",
+                "Réduire la consommation d'eau potable"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 12,
+        "version":  1,
+        "type":  "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel type de navire est utilisé par Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Un voilier traditionnel",
+                "Un catamaran utilisant des énergies renouvelables",
+                "Un bateau de pêche modifié",
+                "Un sous-marin de recherche"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 13,
+        "version":  1,
+        "type":  "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel est le taux global de recyclage du plastique selon Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Environ 9%",
+                "Environ 25%",
+                "Environ 50%",
+                "Environ 70%"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 14,
+        "version":  1,
+        "type":  "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quelle technologie Race for Water propose-t-elle pour valoriser les déchets plastiques ?",
+        "specific": {
+            "candidates": [
+                "Transformation en bioplastiques",
+                "Conversion en énergie via la pyrolyse",
+                "Recyclage chimique en fibres textiles",
+                "Utilisation dans la construction de bâtiments"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 15,
+        "version":  1,
+        "type":  "TEXT",
+        "difficulty": "EASY",
+        "question": "Quelles sont les principales sources de pollution plastique dans les océans ?",
+        "specific": {
+            "candidates": [
+                "Les navires abandonnés",
+                "Les déchets plastiques mal gérés sur terre",
+                "Les déversements industriels",
+                "Les filets de pêche uniquement"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 16,
+        "version":  1,
+        "type":  "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le mode de fonctionnement énergétique du navire Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Énergie fossile uniquement",
+                "Combinaison d'énergie solaire, éolienne et hydrogène",
+                "Énergie électrique à batterie",
+                "Biocarburants produits sur place"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 17,
+        "version":  1,
+        "type":  "TEXT",
+        "difficulty": "HARD",
+        "question": "Quels sont les principaux partenaires de Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Des gouvernements locaux",
+                "Des entreprises privées et institutions scientifiques",
+                "Des associations caritatives",
+                "Des organisations de pêche"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 18,
+        "version":  1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quel est le pourcentage de plastiques non réutilisés ni recyclés chaque année ?",
+        "specific": {
+            "candidates": [
+                "91%",
+                "50%",
+                "30%",
+                "10%"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 19,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel est l’impact des microplastiques sur la faune marine ?",
+        "specific": {
+            "candidates": [
+                "Ils améliorent leur nutrition",
+                "Ils perturbent leur santé et leur chaîne alimentaire",
+                "Ils augmentent leur reproduction",
+                "Ils n'ont aucun impact"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 20,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est l’un des slogans de Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Clean Oceans, Clean Earth",
+                "A World Without Plastic Pollution",
+                "Race Against Plastic Waste",
+                "Sailing for Clean Oceans"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 21,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quelles sont les actions de Race for Water pour protéger les océans ?",
+        "specific": {
+            "candidates": [
+                "Nettoyer les plages",
+                "Réduire la pollution plastique",
+                "Sensibiliser les communautés côtières",
+                "Planter des arbres pour absorber le plastique"
+            ],
+            "answer": [1, 2]
+        }
+    },
+    {
+        "id": 22,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quelles sources d’énergie renouvelable utilise le navire de Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Solaire",
+                "Éolienne",
+                "Hydrogène",
+                "Nucléaire"
+            ],
+            "answer": [0, 1, 2]
+        }
+    },
+    {
+        "id": 23,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quels sont les principaux types de plastique que Race for Water cherche à éliminer des océans ?",
+        "specific": {
+            "candidates": [
+                "Plastiques biodégradables",
+                "Plastiques à usage unique",
+                "Plastiques industriels",
+                "Plastiques provenant des filets de pêche"
+            ],
+            "answer": [1, 2, 3]
+        }
+    },
+    {
+        "id": 24,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quelles sont les principales technologies utilisées par Race for Water pour recycler le plastique ?",
+        "specific": {
+            "candidates": [
+                "Recyclage chimique",
+                "Pyrolyse",
+                "Compaction et filtration",
+                "Bioplastiques"
+            ],
+            "answer": [0, 1]
+        }
+    },
+    {
+        "id": 25,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quels sont les principaux objectifs de Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Réduire la production de plastique",
+                "Recycler 100% des plastiques produits",
+                "Sensibiliser le public à la pollution plastique",
+                "Installer des stations de traitement des eaux usées"
+            ],
+            "answer": [0, 2]
+        }
+    },
+    {
+        "id": 26,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quels sont les impacts de la pollution plastique sur la faune marine ?",
+        "specific": {
+            "candidates": [
+                "Ingestion de plastiques par les animaux marins",
+                "Rupture des chaînes alimentaires marines",
+                "Amélioration de la biodiversité",
+                "Modification des comportements reproductifs des espèces"
+            ],
+            "answer": [0, 1, 3]
+        }
+    },
+    {
+        "id": 27,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quels types de partenariats Race for Water établit-elle pour atteindre ses objectifs ?",
+        "specific": {
+            "candidates": [
+                "Partenariats avec des entreprises privées",
+                "Partenariats avec des gouvernements locaux",
+                "Partenariats avec des ONG",
+                "Partenariats avec des chercheurs universitaires"
+            ],
+            "answer": [0, 1, 2]
+        }
+    },
+    {
+        "id": 28,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quelles sont les conséquences des microplastiques dans les océans ?",
+        "specific": {
+            "candidates": [
+                "Contamination des chaînes alimentaires",
+                "Détérioration des écosystèmes marins",
+                "Amélioration de la qualité de l'eau",
+                "Perturbation du comportement des espèces marines"
+            ],
+            "answer": [0, 1, 3]
+        }
+    },
+    {
+        "id": 29,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel type d’activités Race for Water organise-t-elle pour sensibiliser le public ?",
+        "specific": {
+            "candidates": [
+                "Événements sportifs",
+                "Conférences et forums",
+                "Campagnes de nettoyage",
+                "Actions politiques de lobbying"
+            ],
+            "answer": [0, 1, 2]
+        }
+    },
+    {
+        "id": 30,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quels sont les matériaux les plus souvent utilisés dans les produits plastiques polluants ?",
+        "specific": {
+            "candidates": [
+                "Polyéthylène",
+                "Polystyrène",
+                "PVC",
+                "Plastiques biodégradables"
+            ],
+            "answer": [0, 1, 2]
+        }
+    },
+    {
+        "id": 31,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel est l'objectif principal de l'association Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Lutter contre la pollution plastique",
+                "Promouvoir l'énergie renouvelable",
+                "Sensibiliser au changement climatique",
+                "Protéger les océans"
+            ],
+            "answer": [0, 3]
+        }
+    },
+    {
+        "id": 32,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Race for Water utilise quel type de bateau pour ses missions ?",
+        "specific": {
+            "candidates": [
+                "Un voilier solaire",
+                "Un bateau à moteur",
+                "Un catamaran à hydrogène",
+                "Un bateau à voile classique"
+            ],
+            "answer": [0, 2]
+        }
+    },
+    {
+        "id": 33,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel est le principal défi écologique que Race for Water tente de résoudre en naviguant autour du monde ?",
+        "specific": {
+            "candidates": [
+                "La pollution de l'air",
+                "Le manque d'eau potable",
+                "La pollution plastique des océans",
+                "La déforestation"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 34,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "En quelle année Race for Water a-t-elle lancé sa première expédition mondiale ?",
+        "specific": {
+            "candidates": [
+                "2015",
+                "2017",
+                "2019",
+                "2020"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 35,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quels matériaux Race for Water transforme-t-elle pour produire de l'énergie ?",
+        "specific": {
+            "candidates": [
+                "Les déchets plastiques",
+                "Le bois",
+                "Les algues marines",
+                "Les métaux"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 36,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le rôle principal de la Fondation Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Financer des recherches scientifiques",
+                "Organiser des événements sportifs",
+                "Sensibiliser les populations à la protection des océans",
+                "Former des techniciens spécialisés"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 37,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel est le nom du bateau utilisé par Race for Water pour ses expéditions ?",
+        "specific": {
+            "candidates": [
+                "HydroRacer",
+                "Race for Water",
+                "Blue Planet",
+                "Ocean Warrior"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 38,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "En plus de la lutte contre la pollution plastique, Race for Water s'intéresse également à :",
+        "specific": {
+            "candidates": [
+                "La réduction des émissions de CO2",
+                "La recherche sur les énergies renouvelables",
+                "La préservation de la biodiversité marine",
+                "La lutte contre les incendies forestiers"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 39,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel est le nombre de pays visités par le bateau Race for Water lors de ses expéditions ?",
+        "specific": {
+            "candidates": [
+                "10",
+                "20",
+                "30",
+                "50"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 40,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quel type de système énergétique est principalement utilisé par Race for Water pour alimenter ses expéditions ?",
+        "specific": {
+            "candidates": [
+                "Énergie solaire",
+                "Énergie éolienne",
+                "Hydrogène",
+                "Biodiesel"
+            ],
+            "answer": [0, 2]
+        }
+    },
+    {
+        "id": 41,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "En quelle année l'association Race for Water a-t-elle été fondée ?",
+        "specific": {
+            "answer": 2010
+        }
+    },
+    {
+        "id": 42,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien de kilomètres de voyage en mer Race for Water a-t-elle parcourus en 2017 ?",
+        "specific": {
+            "answer": 40000
+        }
+    },
+    {
+        "id": 43,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de tonnes de plastique ont été collectées par Race for Water lors de ses premières missions en 2018 ?",
+        "specific": {
+            "answer": 100
+        }
+    },
+    {
+        "id": 44,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Quel est le nombre de pays dans lesquels Race for Water a mené des actions depuis sa création ?",
+        "specific": {
+            "answer": 25
+        }
+    },
+    {
+        "id": 45,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de tonnes de CO2 ont été évitées par Race for Water en utilisant l'énergie solaire et l'hydrogène pendant ses expéditions ?",
+        "specific": {
+            "answer": 2000
+        }
+    },
+    {
+        "id": 46,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Quel est le nombre de collaborateurs de Race for Water à travers le monde ?",
+        "specific": {
+            "answer": 50
+        }
+    },
+    {
+        "id": 47,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le nombre d'événements organisés par Race for Water en 2020 pour sensibiliser à la problématique de la pollution plastique ?",
+        "specific": {
+            "answer": 12
+        }
+    },
+    {
+        "id": 48,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Combien de kilos de plastique ont été traités par la technologie de Race for Water lors de ses missions de récupération et de recyclage ?",
+        "specific": {
+            "answer": 5000
+        }
+    },
+    {
+        "id": 49,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "En combien de mois Race for Water a-t-elle pu convertir un catamaran en une station de recyclage mobile utilisant l'énergie solaire et l'hydrogène ?",
+        "specific": {
+            "answer": 12
+        }
+    },
+    {
+        "id": 50,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Combien de tonnes de déchets plastiques ont été collectées par l'association dans le cadre de ses actions en mer depuis sa création ?",
+        "specific": {
+            "answer": 300
+        }
+    },
+    {
+        "id": 51,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Combien de navires Race for Water a-t-elle utilisé pour ses missions depuis sa création ?",
+        "specific": {
+            "answer": 3
+        }
+    },
+    {
+        "id": 52,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "En combien de pays Race for Water a-t-elle installé des stations de recyclage mobile ?",
+        "specific": {
+            "answer": 8
+        }
+    },
+    {
+        "id": 53,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de jours le catamaran de Race for Water a-t-il passé en mer lors de sa première expédition de collecte de plastique ?",
+        "specific": {
+            "answer": 150
+        }
+    },
+    {
+        "id": 54,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Combien de kilomètres de plastique ont été récupérés par les missions de Race for Water dans l'océan Pacifique ?",
+        "specific": {
+            "answer": 3000
+        }
+    },
+    {
+        "id": 55,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de litres d'eau ont été purifiés à l'aide de la technologie de Race for Water pendant ses missions d'expédition ?",
+        "specific": {
+            "answer": 100000
+        }
+    },
+    {
+        "id": 56,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien d'événements éducatifs Race for Water organise-t-elle chaque année pour sensibiliser à la pollution plastique ?",
+        "specific": {
+            "answer": 20
+        }
+    },
+    {
+        "id": 57,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le nombre total de bénévoles qui ont participé aux missions de Race for Water depuis sa création ?",
+        "specific": {
+            "answer": 300
+        }
+    },
+    {
+        "id": 58,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Combien de tonnes de plastique ont été récupérées par Race for Water en 2021 ?",
+        "specific": {
+            "answer": 120
+        }
+    },
+    {
+        "id": 59,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de pays Race for Water a-t-elle visités pendant son projet global pour nettoyer les océans ?",
+        "specific": {
+            "answer": 40
+        }
+    },
+    {
+        "id": 60,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Combien de litres de carburant ont été économisés par Race for Water en utilisant l'énergie solaire et l'hydrogène lors de ses expéditions ?",
+        "specific": {
+            "answer": 50000
+        }
+    },
+    {
+        "id": 61,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Quel est le nombre de tonnes de plastique collectées par Race for Water depuis sa création en 2010 ?",
+        "specific": {
+            "answer": 500
+        }
+    },
+    {
+        "id": 62,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien de pays Race for Water a-t-elle visités pour sensibiliser à la pollution plastique en 2019 ?",
+        "specific": {
+            "answer": 15
+        }
+    },
+    {
+        "id": 63,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de kilomètres le catamaran de Race for Water a-t-il parcourus lors de sa mission de 2016 pour collecter des déchets plastiques ?",
+        "specific": {
+            "answer": 30000
+        }
+    },
+    {
+        "id": 64,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Combien de tonnes de plastique Race for Water a-t-elle pu transformer en énergie à travers son programme de recyclage ?",
+        "specific": {
+            "answer": 250
+        }
+    },
+    {
+        "id": 65,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Quel est le nombre exact de jours nécessaires pour construire le navire Race for Water, qui fonctionne à l'hydrogène et à l'énergie solaire ?",
+        "specific": {
+            "answer": 730
+        }
+    },
+    {
+        "id": 66,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien de tonnes de plastique ont été récoltées par Race for Water lors de son expéditions en 2022 ?",
+        "specific": {
+            "answer": 90
+        }
+    },
+    {
+        "id": 67,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de stations de recyclage mobile Race for Water a-t-elle déployées dans des régions isolées en 2020 ?",
+        "specific": {
+            "answer": 4
+        }
+    },
+    {
+        "id": 68,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Quel est le nombre de litres d'eau potable Race for Water a-t-elle fourni grâce à ses installations solaires et hydrogène en 2021 ?",
+        "specific": {
+            "answer": 1000000
+        }
+    },
+    {
+        "id": 69,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de pays Race for Water a-t-elle traversés avec son bateau de collecte de plastique dans les années 2010-2020 ?",
+        "specific": {
+            "answer": 30
+        }
+    },
+    {
+        "id": 70,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Quel est le nombre de kilomètres parcourus par le bateau de Race for Water en 2023 pour ses missions environnementales ?",
+        "specific": {
+            "answer": 15000
+        }
+    },
+    {
+        "id": 71,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Combien de tonnes de plastique ont été récupérées par le navire Race for Water pendant son expéditions dans l'océan Indien en 2021 ?",
+        "specific": {
+            "answer": 75
+        }
+    },
+    {
+        "id": 72,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Quel est le nombre de litres d'eau purifiés par les installations de Race for Water en 2019 ?",
+        "specific": {
+            "answer": 50000
+        }
+    },
+    {
+        "id": 73,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de kilomètres Race for Water a-t-elle parcourus en 2020 pour promouvoir ses initiatives écologiques ?",
+        "specific": {
+            "answer": 25000
+        }
+    },
+    {
+        "id": 74,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Combien de tonnes de déchets plastiques ont été recyclées par Race for Water en 2022 ?",
+        "specific": {
+            "answer": 150
+        }
+    },
+    {
+        "id": 75,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de jours de mission a passé le navire Race for Water pour nettoyer l'océan Atlantique en 2018 ?",
+        "specific": {
+            "answer": 180
+        }
+    },
+    {
+        "id": 76,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Quel est le nombre de plastiques collectés par Race for Water en 2023 pendant ses expéditions de nettoyage ?",
+        "specific": {
+            "answer": 50
+        }
+    },
+    {
+        "id": 77,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de litres d'eau ont été produits grâce à l'énergie solaire pour les communautés locales en 2017 ?",
+        "specific": {
+            "answer": 300000
+        }
+    },
+    {
+        "id": 78,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Quel est le nombre de tonnes de plastique que Race for Water a récupérées au cours de son expéditions dans la mer Méditerranée en 2020 ?",
+        "specific": {
+            "answer": 120
+        }
+    },
+    {
+        "id": 79,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de pays Race for Water a-t-elle traversés avec son bateau recyclant les déchets plastiques en 2021 ?",
+        "specific": {
+            "answer": 20
+        }
+    },
+    {
+        "id": 80,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Combien de tonnes de plastique ont été collectées par Race for Water en 2015 lors de sa première grande mission de collecte ?",
+        "specific": {
+            "answer": 60
+        }
+    },
+    {
+        "id": 81,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "ANY",
+        "question": "L'association Race for Water a pour objectif principal de {0} l'eau potable dans les zones {1}.",
+        "specific": {
+            "candidates": [
+                "préserver",
+                "distribuer",
+                "assurer",
+                "polluer",
+                "stockage",
+                "réduire",
+                "détruire",
+                "protéger",
+                "analyser",
+                "sensibles"
+            ],
+            "answer": "L'association Race for Water a pour objectif principal de préserver l'eau potable dans les zones sensibles."
+        }
+    },
+    {
+        "id": 82,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "L'un des projets de Race for Water se concentre sur l'utilisation de {0} pour purifier l'eau {1}.",
+        "specific": {
+            "candidates": [
+                "technologies",
+                "produits chimiques",
+                "l'énergie solaire",
+                "moteurs thermiques",
+                "filtres",
+                "réseaux",
+                "drones",
+                "robots",
+                "plastiques recyclés",
+                "panneaux solaires",
+                "salée"
+            ],
+            "answer": "L'un des projets de Race for Water se concentre sur l'utilisation de l'énergie solaire pour purifier l'eau salée."
+        }
+    },
+    {
+        "id": 83,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Le vaisseau utilisé par Race for Water est un {0} alimenté par l'énergie {1} et a pour mission de {2} les océans.",
+        "specific": {
+            "candidates": [
+                "catamaran",
+                "voilier",
+                "bateau",
+                "navire",
+                "hydroplane",
+                "voile",
+                "nettoyer",
+                "éolienne",
+                "solaire",
+                "batteries",
+                "hydrogène"
+            ],
+            "answer": "Le vaisseau utilisé par Race for Water est un catamaran alimenté par l'énergie solaire et a pour mission de nettoyer les océans."
+        }
+    },
+    {
+        "id": 84,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "Les zones les plus touchées par la crise de l'eau sont souvent situées dans des {0} en développement, où les infrastructures sont {1}.",
+        "specific": {
+            "candidates": [
+                "pays",
+                "zones",
+                "regions",
+                "villages",
+                "grandes villes",
+                "capitales",
+                "pays industrialisés",
+                "territoires",
+                "insuffisantes",
+                "îles",
+                "océans"
+            ],
+            "answer": "Les zones les plus touchées par la crise de l'eau sont souvent situées dans des pays en développement, où les infrastructures sont insuffisantes."
+        }
+    },
+    {
+        "id": 85,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "HARD",
+        "question": "Race for Water œuvre pour la protection de l'eau en développant des {0} pour réduire la pollution plastique et améliorer {1} dans les pays vulnérables.",
+        "specific": {
+            "candidates": [
+                "systèmes innovants",
+                "solutions techniques",
+                "dispositifs",
+                "politiques publiques",
+                "partenariats",
+                "technologies",
+                "outils",
+                "robots",
+                "stratégies",
+                "l'accès à l'eau",
+                "projets communautaires"
+            ],
+            "answer": "Race for Water œuvre pour la protection de l'eau en développant des systèmes innovants pour réduire la pollution plastique et améliorer l'accès à l'eau dans les pays vulnérables."
+        }
+    },
+    {
+        "id": 86,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Le projet Race for Water vise à {0} la pollution plastique dans les {1}, notamment en utilisant des {2}.",
+        "specific": {
+            "candidates": [
+                "réduire",
+                "collecter",
+                "dispositifs de collecte",
+                "protéger",
+                "développer",
+                "construire",
+                "régénérer",
+                "éliminer",
+                "utiliser",
+                "planter",
+                "récupérer"
+            ],
+            "answer": "Le projet Race for Water vise à réduire la pollution plastique dans les océans, notamment en utilisant des dispositifs de collecte."
+        }
+    },
+    {
+        "id": 87,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "ANY",
+        "question": "Le vaisseau de Race for Water a une capacité de traitement de {0} tonnes de déchets plastiques par {1}.",
+        "specific": {
+            "candidates": [
+                "5",
+                "10",
+                "100",
+                "50",
+                "25",
+                "2",
+                "jour",
+                "1",
+                "500",
+                "1000",
+                "150"
+            ],
+            "answer": "Le vaisseau de Race for Water a une capacité de traitement de 10 tonnes de déchets plastiques par jour."
+        }
+    },
+    {
+        "id": 88,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "L'impact du changement climatique sur les océans est une priorité pour Race for Water, notamment avec l'augmentation des {0}.",
+        "specific": {
+            "candidates": [
+                "températures",
+                "courants",
+                "déchets",
+                "niveaux de mer",
+                "plastiques",
+                "épaves",
+                "animaux marins",
+                "zones mortes",
+                "pluies",
+                "particules"
+            ],
+            "answer": "L'impact du changement climatique sur les océans est une priorité pour Race for Water, notamment avec l'augmentation des niveaux de mer."
+        }
+    },
+    {
+        "id": 89,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "HARD",
+        "question": "Pour soutenir les actions de Race for Water, il est essentiel de {0} les efforts internationaux pour un {1} à l'eau dans les zones à risque.",
+        "specific": {
+            "candidates": [
+                "accélérer",
+                "financer",
+                "augmenter",
+                "renforcer",
+                "investir",
+                "augmenter",
+                "construire",
+                "accès durable",
+                "planifier",
+                "réduire",
+                "développer"
+            ],
+            "answer": "Pour soutenir les actions de Race for Water, il est essentiel de renforcer les efforts internationaux pour un accès durable à l'eau dans les zones à risque."
+        }
+    },
+    {
+        "id": 90,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "DEVIL",
+        "question": "Les solutions proposées par Race for Water incluent des {0} à échelle locale et internationale pour {1} la consommation d'eau et l'impact écologique.",
+        "specific": {
+            "candidates": [
+                "partenariats",
+                "innovations",
+                "technologies",
+                "programmes",
+                "politiques",
+                "opérations",
+                "réduire",
+                "systèmes",
+                "mesures",
+                "protocoles",
+                "actions"
+            ],
+            "answer": "Les solutions proposées par Race for Water incluent des innovations à échelle locale et internationale pour réduire la consommation d'eau et l'impact écologique."
+        }
+    },
+    {
+        "id": 91,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "ANY",
+        "question": "Race for Water a développé un {0} pour collecter les plastiques flottants dans les océans et prévenir leur {1}.",
+        "specific": {
+            "candidates": [
+                "accumulation",
+                "appareil",
+                "bateau",
+                "dispositif",
+                "collecteur",
+                "système",
+                "véhicule",
+                "robot",
+                "navire",
+                "drones"
+            ],
+            "answer": "Race for Water a développé un dispositif pour collecter les plastiques flottants dans les océans et prévenir leur accumulation."
+        }
+    },
+    {
+        "id": 92,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "Le projet Race for Water repose principalement sur l'utilisation de {0} pour le traitement de l'eau dans les zones isolées.",
+        "specific": {
+            "candidates": [
+                "énergie renouvelable",
+                "technologies de filtration",
+                "dispositifs solaires",
+                "installations mobiles",
+                "l'énergie renouvelable",
+                "réseaux hydrauliques",
+                "moteurs thermiques",
+                "robots",
+                "stations de purification",
+                "panneaux solaires",
+                "batteries"
+            ],
+            "answer": "Le projet Race for Water repose principalement sur l'utilisation de l'énergie renouvelable pour le traitement de l'eau dans les zones isolées."
+        }
+    },
+    {
+        "id": 93,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Les actions de Race for Water ont un impact positif sur la biodiversité marine, en particulier en réduisant les {0} et en protégeant les {1}.",
+        "specific": {
+            "candidates": [
+                "plastiques",
+                "espèces marines",
+                "pollutions",
+                "déchets",
+                "microplastiques",
+                "espèces invasives",
+                "projections",
+                "débris",
+                "zones mortes",
+                "sous-marins",
+                "produits chimiques"
+            ],
+            "answer": "Les actions de Race for Water ont un impact positif sur la biodiversité marine, en particulier en réduisant les plastiques et en protégeant les espèces marines."
+        }
+    },
+    {
+        "id": 94,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "Pour atteindre ses objectifs, Race for Water s'associe à des {0} qui partagent la même vision de la protection des océans et de la {1}.",
+        "specific": {
+            "candidates": [
+                "organisations",
+                "gouvernements",
+                "fondations",
+                "universités",
+                "entreprises",
+                "durabilité",
+                "ONG",
+                "partenaires",
+                "fournisseurs",
+                "startups",
+                "associations"
+            ],
+            "answer": "Pour atteindre ses objectifs, Race for Water s'associe à des organisations qui partagent la même vision de la protection des océans et de la durabilité."
+        }
+    },
+    {
+        "id": 95,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "HARD",
+        "question": "Dans le cadre de sa mission, Race for Water a mis en place un {0} d'experts en technologies écologiques pour résoudre les {1} liés à l'accès à l'eau potable.",
+        "specific": {
+            "candidates": [
+                "réseau",
+                "laboratoire",
+                "panel",
+                "comité",
+                "programme",
+                "pôle",
+                "groupe",
+                "équipe",
+                "atelier",
+                "défis",
+                "projet"
+            ],
+            "answer": "Dans le cadre de sa mission, Race for Water a mis en place un réseau d'experts en technologies écologiques pour résoudre les défis liés à l'accès à l'eau potable."
+        }
+    },
+    {
+        "id": 96,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Race for Water utilise des {0} pour sensibiliser les populations locales aux dangers de la pollution plastique et à la {1} de l'eau potable.",
+        "specific": {
+            "candidates": [
+                "campagnes",
+                "supports",
+                "gestion",
+                "événements",
+                "ateliers",
+                "formations",
+                "films",
+                "affiches",
+                "projets",
+                "actions",
+                "programmes"
+            ],
+            "answer": "Race for Water utilise des campagnes pour sensibiliser les populations locales aux dangers de la pollution plastique et à la gestion de l'eau potable."
+        }
+    },
+    {
+        "id": 97,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "ANY",
+        "question": "L'initiative de Race for Water est financée par des {0}, des dons privés et des partenariats avec des entreprises {1}.",
+        "specific": {
+            "candidates": [
+                "investissements",
+                "subventions",
+                "fonds",
+                "engagées",
+                "contrats",
+                "accords",
+                "financements",
+                "collectes",
+                "contributions",
+                "dons",
+                "mécènes"
+            ],
+            "answer": "L'initiative de Race for Water est financée par des fonds, des dons privés et des partenariats avec des entreprises engagées."
+        }
+    },
+    {
+        "id": 98,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "DEVIL",
+        "question": "La solution de filtration de l'eau de Race for Water a été mise au point après plusieurs années de {0} en collaboration avec des {1} spécialisés dans les technologies environnementales.",
+        "specific": {
+            "candidates": [
+                "recherches",
+                "tests",
+                "études",
+                "analyses",
+                "expérimentations",
+                "développements",
+                "prototypages",
+                "analyses de risques",
+                "experts",
+                "collaborations",
+                "observations"
+            ],
+            "answer": "La solution de filtration de l'eau de Race for Water a été mise au point après plusieurs années de recherches en collaboration avec des experts spécialisés dans les technologies environnementales."
+        }
+    },
+    {
+        "id": 99,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "HARD",
+        "question": "Le défi auquel Race for Water fait face est d'assurer un {0} durable tout en limitant les {1} générés par l'industrialisation des solutions de purification.",
+        "specific": {
+            "candidates": [
+                "accès",
+                "approvisionnement",
+                "développement",
+                "traitement",
+                "service",
+                "impacts",
+                "transfert",
+                "équité",
+                "progrès",
+                "nettoyage"
+            ],
+            "answer": "Le défi auquel Race for Water fait face est d'assurer un accès durable tout en limitant les impacts environnementaux générés par l'industrialisation des solutions de purification."
+        }
+    },
+    {
+        "id": 100,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Les efforts de Race for Water ont permis de {0} des solutions technologiques pour filtrer l'eau, en particulier dans les {1} frappées par la sécheresse.",
+        "specific": {
+            "candidates": [
+                "développer",
+                "produire",
+                "améliorer",
+                "implanter",
+                "concevoir",
+                "distribuer",
+                "perfectionner",
+                "inventer",
+                "adapter",
+                "installer",
+                "régions"
+            ],
+            "answer": "Les efforts de Race for Water ont permis de développer des solutions technologiques pour filtrer l'eau, en particulier dans les régions frappées par la sécheresse."
+        }
+    },
+    {
+        "id": 101,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "ANY",
+        "question": "L'une des missions de Race for Water est de {0} l'impact des déchets plastiques sur la faune marine, en particulier sur les {1}.",
+        "specific": {
+            "candidates": [
+                "réduire",
+                "éliminer",
+                "gérer",
+                "inverser",
+                "diminuer",
+                "réhabiliter",
+                "tortues marines",
+                "atténuer",
+                "augmenter",
+                "analyser",
+                "développer"
+            ],
+            "answer": "L'une des missions de Race for Water est de réduire l'impact des déchets plastiques sur la faune marine, en particulier sur les tortues marines."
+        }
+    },
+    {
+        "id": 102,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "Race for Water utilise des {0} pour récupérer les plastiques en mer et les recycler en {1}.",
+        "specific": {
+            "candidates": [
+                "technologies",
+                "robots",
+                "drones",
+                "matériaux utilisables",
+                "capteurs",
+                "véhicules",
+                "bâtiments",
+                "dispositifs",
+                "navires",
+                "installations",
+                "systèmes"
+            ],
+            "answer": "Race for Water utilise des robots pour récupérer les plastiques en mer et les recycler en matériaux utilisables."
+        }
+    },
+    {
+        "id": 103,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "L'association Race for Water organise régulièrement des {0} pour sensibiliser les jeunes générations aux enjeux de l'eau et de {1}.",
+        "specific": {
+            "candidates": [
+                "événements",
+                "concours",
+                "programmes",
+                "séminaires",
+                "formations",
+                "ateliers",
+                "conférences",
+                "expéditions",
+                "l'environnement",
+                "formations"
+            ],
+            "answer": "L'association Race for Water organise régulièrement des événements pour sensibiliser les jeunes générations aux enjeux de l'eau et de l'environnement."
+        }
+    },
+    {
+        "id": 104,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "HARD",
+        "question": "Race for Water a créé des {0} afin de tester de nouvelles solutions de filtration dans des zones avec un accès difficile à {1}.",
+        "specific": {
+            "candidates": [
+                "laboratoires",
+                "stations mobiles",
+                "technologies",
+                "pilotes",
+                "centres de test",
+                "unités mobiles",
+                "solutions",
+                "experts",
+                "l'eau potable",
+                "infrastructures"
+            ],
+            "answer": "Race for Water a créé des stations mobiles afin de tester de nouvelles solutions de filtration dans des zones avec un accès difficile à l'eau potable."
+        }
+    },
+    {
+        "id": 105,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Les initiatives de Race for Water incluent l'utilisation de {0} pour transformer les déchets plastiques en {1} durables.",
+        "specific": {
+            "candidates": [
+                "machines",
+                "solutions",
+                "technologies",
+                "matériaux",
+                "techniques",
+                "applications",
+                "projets",
+                "innovations",
+                "méthodes"
+            ],
+            "answer": "Les initiatives de Race for Water incluent l'utilisation de technologies pour transformer les déchets plastiques en matériaux durables."
+        }
+    },
+    {
+        "id": 106,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "ANY",
+        "question": "Le projet de filtration d'eau de Race for Water repose sur l'exploitation de {0} pour produire de l'eau potable dans des zones isolées.",
+        "specific": {
+            "candidates": [
+                "énergie solaire",
+                "technologies innovantes",
+                "stations mobiles",
+                "systèmes de filtration",
+                "batteries",
+                "l'énergie solaire",
+                "réservoirs",
+                "éoliennes",
+                "réseaux hydrauliques"
+            ],
+            "answer": "Le projet de filtration d'eau de Race for Water repose sur l'exploitation de l'énergie solaire pour produire de l'eau potable dans des zones isolées."
+        }
+    },
+    {
+        "id": 107,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "DEVIL",
+        "question": "Pour chaque projet, Race for Water établit des {0} avec des acteurs locaux et internationaux pour favoriser l'implémentation des {1} écologiques.",
+        "specific": {
+            "candidates": [
+                "partenariats",
+                "accords",
+                "projets",
+                "collaborations",
+                "solutions",
+                "partenaires",
+                "contrats",
+                "initiatives",
+                "alliances",
+                "résultats",
+                "actions"
+            ],
+            "answer": "Pour chaque projet, Race for Water établit des partenariats avec des acteurs locaux et internationaux pour favoriser l'implémentation des solutions écologiques."
+        }
+    },
+    {
+        "id": 108,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Les initiatives de Race for Water contribuent également à la réduction des {0} qui affectent les écosystèmes marins et terrestres, en mettant l'accent sur la {1}.",
+        "specific": {
+            "candidates": [
+                "polluants",
+                "plastiques",
+                "gaz à effet de serre",
+                "déchets",
+                "résidus",
+                "produits chimiques",
+                "réductions",
+                "contaminants",
+                "prévention",
+                "particules",
+                "effluents"
+            ],
+            "answer": "Les initiatives de Race for Water contribuent également à la réduction des plastiques qui affectent les écosystèmes marins et terrestres, en mettant l'accent sur la prévention."
+        }
+    },
+    {
+        "id": 109,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "Les actions de Race for Water sont soutenues par des {0} qui financent des projets de {1} des océans et de purification de l'eau.",
+        "specific": {
+            "candidates": [
+                "dons",
+                "partenariats",
+                "subventions",
+                "fournisseurs",
+                "générosités",
+                "investisseurs",
+                "nettoyage",
+                "fondations",
+                "entreprises",
+                "gouvernements"
+            ],
+            "answer": "Les actions de Race for Water sont soutenues par des dons qui financent des projets de nettoyage des océans et de purification de l'eau."
+        }
+    },
+    {
+        "id": 110,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "HARD",
+        "question": "L'innovation clé de Race for Water réside dans l'utilisation de {0} pour récolter, filtrer et recycler l'eau de mer, tout en réduisant les {1} polluants.",
+        "specific": {
+            "candidates": [
+                "systèmes automatisés",
+                "robots marins",
+                "machines",
+                "dispositifs solaires",
+                "technologies de pointe",
+                "stations mobiles",
+                "technologies innovantes",
+                "déchets",
+                "processus",
+                "solutions techniques"
+            ],
+            "answer": "L'innovation clé de Race for Water réside dans l'utilisation de technologies innovantes pour récolter, filtrer et recycler l'eau de mer, tout en réduisant les déchets polluants."
+        }
+    },
+    {
+        "id": 111,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "ANY",
+        "question": "Pour réduire l'empreinte carbone, Race for Water utilise des {0} afin de produire de l'énergie pour ses projets de purification de l'eau.",
+        "specific": {
+            "candidates": [
+                "panneaux solaires",
+                "éoliennes",
+                "technologies écologiques",
+                "dispositifs énergétiques",
+                "moteurs hybrides",
+                "batteries",
+                "réacteurs solaires",
+                "stations hydrauliques",
+                "réseaux électriques",
+                "moteurs électriques"
+            ],
+            "answer": "Pour réduire l'empreinte carbone, Race for Water utilise des panneaux solaires afin de produire de l'énergie pour ses projets de purification de l'eau."
+        }
+    },
+    {
+        "id": 112,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "Race for Water se concentre principalement sur la collecte des {0} flottants pour préserver les {1} marins.",
+        "specific": {
+            "candidates": [
+                "plastiques",
+                "déchets",
+                "réseaux",
+                "écosystèmes",
+                "microplastiques",
+                "détritus",
+                "résidus",
+                "polymères",
+                "objets",
+                "polluants"
+            ],
+            "answer": "Race for Water se concentre principalement sur la collecte des plastiques flottants pour préserver les écosystèmes marins."
+        }
+    },
+    {
+        "id": 113,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Les actions de Race for Water ont pour but de protéger les {0} marines, en particulier les {1}, menacées par la pollution plastique.",
+        "specific": {
+            "candidates": [
+                "espèces",
+                "coraux",
+                "tortues",
+                "poissons",
+                "mammifères",
+                "espèces",
+                "algues",
+                "planctons",
+                "bactéries",
+                "oiseaux",
+                "insectes"
+            ],
+            "answer": "Les actions de Race for Water ont pour but de protéger les espèces marines, en particulier les tortues, menacées par la pollution plastique."
+        }
+    },
+    {
+        "id": 114,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "HARD",
+        "question": "Pour répondre aux défis globaux de la pollution plastique, Race for Water met en œuvre des {0} innovants capables de traiter les {1} sur de vastes zones océaniques.",
+        "specific": {
+            "candidates": [
+                "technologies",
+                "dispositifs",
+                "robots",
+                "vaisseaux",
+                "solutions",
+                "systèmes",
+                "déchets plastiques",
+                "structures",
+                "programmes",
+                "produits"
+            ],
+            "answer": "Pour répondre aux défis globaux de la pollution plastique, Race for Water met en œuvre des dispositifs innovants capables de traiter les déchets plastiques sur de vastes zones océaniques."
+        }
+    },
+    {
+        "id": 115,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "ANY",
+        "question": "Les solutions proposées par Race for Water sont adaptées aux {0} maritimes et permettent de lutter contre la {1} plastique.",
+        "specific": {
+            "candidates": [
+                "zones",
+                "problèmes",
+                "pollution",
+                "régions",
+                "milieux",
+                "pays",
+                "étapes",
+                "technologies",
+                "modèles",
+                "écosystèmes"
+            ],
+            "answer": "Les solutions proposées par Race for Water sont adaptées aux zones maritimes et permettent de lutter contre la pollution plastique."
+        }
+    },
+    {
+        "id": 116,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Pour aider à résoudre la crise de l'eau, Race for Water a développé des {0} de purification de l'eau qui sont utilisés dans les {1} les plus affectées.",
+        "specific": {
+            "candidates": [
+                "systèmes",
+                "technologies",
+                "stations",
+                "robots",
+                "dispositifs",
+                "régions",
+                "solutions",
+                "programmes",
+                "unités",
+                "stations mobiles"
+            ],
+            "answer": "Pour aider à résoudre la crise de l'eau, Race for Water a développé des systèmes de purification de l'eau qui sont utilisés dans les régions les plus affectées."
+        }
+    },
+    {
+        "id": 117,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "DEVIL",
+        "question": "L'impact de Race for Water sur la préservation des océans repose en grande partie sur des {0} durables et une approche de {1} à l'échelle mondiale.",
+        "specific": {
+            "candidates": [
+                "initiatives",
+                "programmes",
+                "actions",
+                "solutions",
+                "inventions",
+                "stratégies",
+                "collaborative",
+                "technologies",
+                "partenariats",
+                "réseaux"
+            ],
+            "answer": "L'impact de Race for Water sur la préservation des océans repose en grande partie sur des stratégies durables et une approche collaborative à l'échelle mondiale."
+        }
+    },
+    {
+        "id": 118,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "HARD",
+        "question": "Race for Water a mis en place des {0} pour analyser et répertorier les effets de la pollution plastique sur les {1} marins.",
+        "specific": {
+            "candidates": [
+                "missions",
+                "projets",
+                "programmes",
+                "recherches",
+                "laboratoires",
+                "études",
+                "écosystèmes",
+                "experts",
+                "analyses",
+                "systèmes"
+            ],
+            "answer": "Race for Water a mis en place des recherches pour analyser et répertorier les effets de la pollution plastique sur les écosystèmes marins."
+        }
+    },
+    {
+        "id": 119,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "MEDIUM",
+        "question": "Race for Water met l'accent sur l'importance de la {0} pour maintenir l'équilibre des écosystèmes et garantir un avenir {1} pour les océans.",
+        "specific": {
+            "candidates": [
+                "durabilité",
+                "protection",
+                "préservation",
+                "économie circulaire",
+                "éducation",
+                "réduction",
+                "soutien",
+                "réhabilitation",
+                "durable",
+                "adaptation"
+            ],
+            "answer": "Race for Water met l'accent sur l'importance de la protection pour maintenir l'équilibre des écosystèmes et garantir un avenir durable pour les océans."
+        }
+    },
+    {
+        "id": 120,
+        "version": 1,
+        "type": "FILL",
+        "difficulty": "EASY",
+        "question": "Les actions de Race for Water incluent des {0} pour nettoyer les plages et sensibiliser les {1} aux dangers du plastique dans les océans.",
+        "specific": {
+            "candidates": [
+                "événements",
+                "missions",
+                "projets",
+                "campagnes",
+                "actions",
+                "programmes",
+                "initiatives",
+                "nettoyages",
+                "communautés",
+                "collectes"
+            ],
+            "answer": "Les actions de Race for Water incluent des événements pour nettoyer les plages et sensibiliser les communautés aux dangers du plastique dans les océans."
+        }
+    },
+    {
+        "id": 121,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Quel est l'objectif principal de l'association Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Lutter contre la pollution plastique",
+                "Promouvoir les énergies renouvelables",
+                "Réduire les émissions de gaz à effet de serre",
+                "Sauver les océans"
+            ],
+            "answer": [0, 1, 3]
+        }
+    },
+    {
+        "id": 122,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "En quelle année l'association Race for Water a-t-elle été fondée ?",
+        "specific": {
+            "candidates": [
+                "2011",
+                "2015",
+                "2008",
+                "2020"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 123,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le nom du navire emblématique utilisé par Race for Water pour promouvoir ses actions ?",
+        "specific": {
+            "candidates": [
+                "Race for Water Odyssey",
+                "Ocean Voyager",
+                "HydroOne",
+                "Clean Seas"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 124,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quelle est la technologie utilisée par Race for Water pour générer de l'énergie à partir du soleil et de l'eau ?",
+        "specific": {
+            "candidates": [
+                "Hydroélectrique",
+                "Solar Wind",
+                "Hydrolienne",
+                "Système hybride solaire-hydrogène"
+            ],
+            "answer": [3]
+        }
+    },
+    {
+        "id": 125,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel est le rôle de Race for Water dans la lutte contre la pollution marine ?",
+        "specific": {
+            "candidates": [
+                "Éliminer les déchets plastiques des océans",
+                "Sensibiliser le public à la pollution marine",
+                "Construire des installations de recyclage",
+                "Promouvoir la législation anti-pollution"
+            ],
+            "answer": [0, 1]
+        }
+    },
+    {
+        "id": 126,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est l'objectif de la Race for Water Odyssey dans ses expéditions ?",
+        "specific": {
+            "candidates": [
+                "Mesurer les niveaux de pollution dans les océans",
+                "Découvrir de nouvelles espèces marines",
+                "Construire des plateformes de production d'énergie renouvelable",
+                "Sensibiliser et collecter des fonds pour des projets environnementaux"
+            ],
+            "answer": [0, 3]
+        }
+    },
+    {
+        "id": 127,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Qui est le fondateur de l'association Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Marco Simeoni",
+                "Jean-Michel Cousteau",
+                "Jacques-Yves Cousteau",
+                "Sylvain Legrand"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 128,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quels types de déchets Race for Water tente-t-elle de collecter lors de ses missions ?",
+        "specific": {
+            "candidates": [
+                "Plastiques",
+                "Métaux lourds",
+                "Déchets électroniques",
+                "Microplastiques"
+            ],
+            "answer": [0, 3]
+        }
+    },
+    {
+        "id": 129,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quel est le nom du projet de Race for Water visant à démontrer la faisabilité de l'utilisation de l'énergie de l'eau et du soleil ?",
+        "specific": {
+            "candidates": [
+                "Race for Water Odyssey",
+                "Water4Energy",
+                "Ocean Power",
+                "HydroSun"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 130,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le principal défi auquel Race for Water est confrontée dans ses missions ?",
+        "specific": {
+            "candidates": [
+                "Trouver des financements",
+                "Soutenir les politiques de gestion des déchets",
+                "Faire face aux défis logistiques en mer",
+                "Éduquer la population mondiale sur la pollution"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 131,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quelle est la principale source d'énergie renouvelable utilisée par Race for Water ?",
+        "specific": {
+            "candidates": [
+                "L'énergie solaire",
+                "L'énergie géothermique",
+                "L'énergie éolienne",
+                "L'énergie marémotrice"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 132,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le but principal de la Race for Water Odyssey ?",
+        "specific": {
+            "candidates": [
+                "Tester des technologies de détection des microplastiques",
+                "Sensibiliser à la pollution des océans et promouvoir des solutions écologiques",
+                "Créer des solutions pour le recyclage des déchets plastiques",
+                "Collecter des fonds pour les ONG écologiques"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 133,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quelle organisation internationale a soutenu Race for Water dans ses projets ?",
+        "specific": {
+            "candidates": [
+                "Les Nations Unies",
+                "Greenpeace",
+                "World Wildlife Fund (WWF)",
+                "La Banque mondiale"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 134,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Combien de pays Race for Water a-t-elle visité lors de ses expéditions ?",
+        "specific": {
+            "candidates": [
+                "10 pays",
+                "50 pays",
+                "30 pays",
+                "5 pays"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 135,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel type de déchets Race for Water se concentre-t-elle principalement à éliminer ?",
+        "specific": {
+            "candidates": [
+                "Plastiques",
+                "Déchets alimentaires",
+                "Déchets chimiques",
+                "Déchets radioactifs"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 136,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quels sont les principaux moyens de transport utilisés par Race for Water pour ses missions ?",
+        "specific": {
+            "candidates": [
+                "Navires et voiliers",
+                "Avions et camions",
+                "Bateaux et hélicoptères",
+                "Trains et voitures"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 137,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quel est le nom de la technologie innovante développée par Race for Water pour convertir l'énergie des vagues en électricité ?",
+        "specific": {
+            "candidates": [
+                "Waveline",
+                "HydroWave",
+                "Ocean Pulse",
+                "Blue Power"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 138,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Dans quel pays Race for Water a-t-elle déployé une de ses premières grandes initiatives de collecte de plastique en 2015 ?",
+        "specific": {
+            "candidates": [
+                "Inde",
+                "Philippines",
+                "Brésil",
+                "Australie"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 139,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quels sont les principaux partenaires financiers de l'association Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Entreprises privées et fondations",
+                "Gouvernements et ONG",
+                "Banques internationales",
+                "Citoyens et bénévoles"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 140,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Race for Water s'engage également dans la lutte contre la pollution de l'air. Quelle technologie utilise-t-elle pour limiter les émissions de CO2 ?",
+        "specific": {
+            "candidates": [
+                "Système de captage de CO2",
+                "Technologie de filtration des gaz d'échappement",
+                "Transports électriques",
+                "Plantes purificatrices"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 141,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Quelle est la principale zone géographique d'intervention de l'association Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Les océans du monde entier",
+                "L'Amazonie",
+                "Les montagnes des Alpes",
+                "Les forêts tropicales"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 142,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel est le principal défi environnemental abordé par Race for Water ?",
+        "specific": {
+            "candidates": [
+                "La déforestation",
+                "La pollution plastique des océans",
+                "La perte de biodiversité",
+                "Les changements climatiques"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 143,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel type d'énergie est utilisé par les technologies à bord du navire Race for Water Odyssey ?",
+        "specific": {
+            "candidates": [
+                "Énergie éolienne",
+                "Énergie solaire et hydrogène",
+                "Énergie géothermique",
+                "Énergie marémotrice"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 144,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Combien de temps dure une expéditions typique de la Race for Water Odyssey ?",
+        "specific": {
+            "candidates": [
+                "Quelques mois",
+                "Un an",
+                "Plusieurs années",
+                "Quelques semaines"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 145,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quelle est la principale action de Race for Water lors de ses missions ?",
+        "specific": {
+            "candidates": [
+                "Collecter des déchets plastiques dans les océans",
+                "Construire des stations de purification de l'eau",
+                "Organiser des campagnes de plantation d'arbres",
+                "Distribuer des filtres à eau"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 146,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Comment Race for Water sensibilise-t-elle le public à la pollution marine ?",
+        "specific": {
+            "candidates": [
+                "En organisant des événements de nettoyage sur les plages",
+                "En diffusant des documentaires",
+                "Par des campagnes de publicité",
+                "En proposant des solutions pour recycler le plastique"
+            ],
+            "answer": [1, 2]
+        }
+    },
+    {
+        "id": 147,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel est le principal objectif de Race for Water en matière de gestion des déchets plastiques ?",
+        "specific": {
+            "candidates": [
+                "Réduire la quantité de plastique dans les océans",
+                "Recycler tout le plastique collecté",
+                "Sensibiliser les gouvernements à l'impact de la pollution",
+                "Utiliser le plastique pour produire de l'énergie"
+            ],
+            "answer": [0, 1]
+        }
+    },
+    {
+        "id": 148,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Race for Water a lancé une mission en 2016 pour sensibiliser à quoi ?",
+        "specific": {
+            "candidates": [
+                "La pollution des océans",
+                "La déforestation",
+                "La qualité de l'air",
+                "Les changements climatiques"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 149,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quel est le nom du système innovant testé par Race for Water pour transformer l'eau de mer en eau potable ?",
+        "specific": {
+            "candidates": [
+                "DesalTech",
+                "HydroWater",
+                "FreshSea",
+                "SeaPure"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 150,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Combien de déchets plastiques Race for Water estime-t-elle avoir collecté lors de ses missions ?",
+        "specific": {
+            "candidates": [
+                "Plus de 50 000 tonnes",
+                "Plus de 1 million de kilos",
+                "Plus de 10 000 tonnes",
+                "Plus de 100 000 kilos"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 151,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel est le principal objectif de l'association Race for Water en matière de sensibilisation ?",
+        "specific": {
+            "candidates": [
+                "Éduquer les jeunes générations à la protection des océans",
+                "Informer les entreprises sur le recyclage",
+                "Promouvoir les technologies de filtration de l'eau",
+                "Encourager la plantation d'arbres"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 152,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le nom du projet visant à collecter les déchets plastiques flottants dans les océans ?",
+        "specific": {
+            "candidates": [
+                "Project Blue",
+                "Ocean CleanUp",
+                "Race for Water Odyssey",
+                "SeaSafe"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 153,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel type d’énergie alternative Race for Water utilise-t-elle pour propulser son navire ?",
+        "specific": {
+            "candidates": [
+                "Énergie éolienne et solaire",
+                "Énergie marémotrice et géothermique",
+                "Énergie solaire et hydrogène",
+                "Énergie thermique des océans"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 154,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Race for Water met en œuvre des solutions pour quel type de pollution ?",
+        "specific": {
+            "candidates": [
+                "Pollution des océans par les plastiques",
+                "Pollution de l’air par les gaz à effet de serre",
+                "Pollution des sols par les produits chimiques",
+                "Pollution lumineuse"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 155,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Quel est le rôle de l’équipe à bord du Race for Water Odyssey ?",
+        "specific": {
+            "candidates": [
+                "Recueillir des fonds pour les programmes environnementaux",
+                "Mener des recherches scientifiques sur la pollution marine",
+                "Protéger les espèces marines menacées",
+                "Sensibiliser le public à la pollution des océans"
+            ],
+            "answer": [1, 3]
+        }
+    },
+    {
+        "id": 156,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Comment Race for Water collabore-t-elle avec les communautés locales ?",
+        "specific": {
+            "candidates": [
+                "En fournissant des infrastructures pour le recyclage des déchets",
+                "En organisant des campagnes de nettoyage des plages",
+                "En développant des projets éducatifs et des formations",
+                "En distribuant des filtres à eau"
+            ],
+            "answer": [2, 3]
+        }
+    },
+    {
+        "id": 157,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel est l’impact principal de la pollution plastique dans les océans, selon Race for Water ?",
+        "specific": {
+            "candidates": [
+                "La destruction des habitats marins",
+                "L'augmentation de la température des océans",
+                "La réduction des niveaux d'oxygène dans l'eau",
+                "L'acidification des océans"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 158,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Où Race for Water a-t-elle mené une mission pour étudier la pollution des rivières ?",
+        "specific": {
+            "candidates": [
+                "En Asie du Sud-Est",
+                "En Afrique de l’Ouest",
+                "Dans les Caraïbes",
+                "En Europe de l'Est"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 159,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le rôle des partenaires scientifiques dans les missions de Race for Water ?",
+        "specific": {
+            "candidates": [
+                "Développer de nouvelles technologies de nettoyage",
+                "Analyser l'impact environnemental des missions",
+                "Fournir des financements pour la recherche",
+                "Organiser des événements de collecte de fonds"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 160,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quel est le nom de la technologie que Race for Water utilise pour transformer les déchets plastiques collectés en carburant ?",
+        "specific": {
+            "candidates": [
+                "Plastic2Fuel",
+                "ReFuel",
+                "PolyFuel",
+                "OceanTech"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 161,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Quel est le principal objectif du navire Race for Water Odyssey ?",
+        "specific": {
+            "candidates": [
+                "Explorer de nouveaux océans",
+                "Collecter des déchets plastiques et sensibiliser à la pollution",
+                "Faire de la recherche scientifique sur les coraux",
+                "Organiser des événements pour collecter des fonds"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 162,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Dans quel secteur Race for Water développe-t-elle des solutions écologiques innovantes ?",
+        "specific": {
+            "candidates": [
+                "Énergie renouvelable",
+                "Gestion des déchets plastiques",
+                "Agriculture durable",
+                "Éducation environnementale"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 163,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Quel est le nom du programme de Race for Water dédié à la recherche et au développement de nouvelles technologies de nettoyage des océans ?",
+        "specific": {
+            "candidates": [
+                "OceanTech",
+                "CleanSeas",
+                "Blue Planet",
+                "Race for Water Research"
+            ],
+            "answer": [3]
+        }
+    },
+    {
+        "id": 164,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Dans combien de pays Race for Water mène-t-elle des missions de nettoyage et de sensibilisation ?",
+        "specific": {
+            "candidates": [
+                "Plus de 10 pays",
+                "Plus de 30 pays",
+                "Plus de 50 pays",
+                "Plus de 100 pays"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 165,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "EASY",
+        "question": "Race for Water utilise quel type de navire pour ses expéditions ?",
+        "specific": {
+            "candidates": [
+                "Un voilier",
+                "Un catamaran",
+                "Un porte-conteneurs",
+                "Un bateau à moteur"
+            ],
+            "answer": [1]
+        }
+    },
+    {
+        "id": 166,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Quel est le principal défi lié à la collecte des déchets plastiques dans les océans ?",
+        "specific": {
+            "candidates": [
+                "La taille des déchets",
+                "Le coût élevé de la collecte",
+                "Les conditions météorologiques difficiles",
+                "L'isolement des zones polluées"
+            ],
+            "answer": [1, 3]
+        }
+    },
+    {
+        "id": 167,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "HARD",
+        "question": "Race for Water a-t-elle développé des partenariats avec des gouvernements pour soutenir ses projets de nettoyage ?",
+        "specific": {
+            "candidates": [
+                "Oui, dans plusieurs pays",
+                "Non, uniquement avec des entreprises privées",
+                "Non, les partenariats sont exclusivement avec des ONG",
+                "Oui, mais uniquement en Europe"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 168,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "ANY",
+        "question": "Quel type de déchets Race for Water s'efforce-t-elle de collecter principalement dans les océans ?",
+        "specific": {
+            "candidates": [
+                "Plastiques",
+                "Métaux lourds",
+                "Verre",
+                "Caoutchouc"
+            ],
+            "answer": [0]
+        }
+    },
+    {
+        "id": 169,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "MEDIUM",
+        "question": "Dans quelle année la première expéditions Race for Water Odyssey a-t-elle été lancée ?",
+        "specific": {
+            "candidates": [
+                "2010",
+                "2012",
+                "2015",
+                "2016"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 170,
+        "version": 1,
+        "type": "TEXT",
+        "difficulty": "DEVIL",
+        "question": "Quel est le nom du système de filtration qui permet à Race for Water de rendre l'eau de mer potable à bord de ses navires ?",
+        "specific": {
+            "candidates": [
+                "SeaFilter",
+                "OceanPure",
+                "DesalinationTech",
+                "WaterGen"
+            ],
+            "answer": [2]
+        }
+    },
+    {
+        "id": 171,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "En quelle année l'association Race for Water a-t-elle été fondée ?",
+        "specific": {
+            "answer": 2010
+        }
+    },
+    {
+        "id": 172,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien de pays Race for Water a-t-elle visité lors de sa tournée 2017 ?",
+        "specific": {
+            "answer": 10
+        }
+    },
+    {
+        "id": 173,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de tonnes de déchets plastiques sont estimées être jetées dans les océans chaque année ?",
+        "specific": {
+            "answer": 8000000
+        }
+    },
+    {
+        "id": 174,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Quel est le budget approximatif de l'association Race for Water en 2023 ?",
+        "specific": {
+            "answer": 5000000
+        }
+    },
+    {
+        "id": 175,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Combien de jours le projet Race for Water a-t-il duré lors de sa tournée mondiale ?",
+        "specific": {
+            "answer": 1000
+        }
+    },
+    {
+        "id": 176,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien de projets de récupération de plastiques en mer sont soutenus par Race for Water ?",
+        "specific": {
+            "answer": 4
+        }
+    },
+    {
+        "id": 177,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de tonnes de plastique ont été récoltées par Race for Water depuis sa création ?",
+        "specific": {
+            "answer": 1000
+        }
+    },
+    {
+        "id": 178,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Combien de membres composent actuellement l'équipe de Race for Water ?",
+        "specific": {
+            "answer": 50
+        }
+    },
+    {
+        "id": 179,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de kilomètres a parcouru le catamaran Race for Water pour sensibiliser le public aux déchets plastiques ?",
+        "specific": {
+            "answer": 70000
+        }
+    },
+    {
+        "id": 180,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "En combien de jours le catamaran Race for Water a-t-il réalisé son premier tour du monde ?",
+        "specific": {
+            "answer": 365
+        }
+    },
+    {
+        "id": 181,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Quel est le nom du catamaran utilisé par Race for Water pour sa tournée mondiale ?",
+        "specific": {
+            "answer": 1
+        }
+    },
+    {
+        "id": 182,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien de mois Race for Water a-t-elle mis pour traverser l'océan Atlantique lors de son tour du monde ?",
+        "specific": {
+            "answer": 3
+        }
+    },
+    {
+        "id": 183,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de litres d'eau potable peuvent être produits chaque jour grâce aux technologies de Race for Water ?",
+        "specific": {
+            "answer": 5000
+        }
+    },
+    {
+        "id": 184,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Quel est le coût de la construction du catamaran Race for Water ?",
+        "specific": {
+            "answer": 6000000
+        }
+    },
+    {
+        "id": 185,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Quel est le principal objectif de l'association Race for Water ?",
+        "specific": {
+            "answer": 1
+        }
+    },
+    {
+        "id": 186,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien de pays Race for Water a-t-elle visité dans le cadre de sa campagne de sensibilisation ?",
+        "specific": {
+            "answer": 20
+        }
+    },
+    {
+        "id": 187,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de mètres carrés de plastique ont été nettoyés par Race for Water depuis 2010 ?",
+        "specific": {
+            "answer": 250000
+        }
+    },
+    {
+        "id": 188,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Combien de tonnes de plastique ont été utilisées pour fabriquer les structures de collecte à bord du catamaran Race for Water ?",
+        "specific": {
+            "answer": 30
+        }
+    },
+    {
+        "id": 189,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de pays Race for Water a-t-elle visité en 2023 pour sensibiliser à la pollution plastique ?",
+        "specific": {
+            "answer": 15
+        }
+    },
+    {
+        "id": 190,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "En combien d'années Race for Water a-t-elle traversé l'océan Pacifique à bord de son catamaran ?",
+        "specific": {
+            "answer": 2
+        }
+    },
+    {
+        "id": 191,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Combien de mois a duré la première expédition de Race for Water autour du monde ?",
+        "specific": {
+            "answer": 12
+        }
+    },
+    {
+        "id": 192,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Combien de continents Race for Water a-t-elle traversés pour sensibiliser aux enjeux écologiques ?",
+        "specific": {
+            "answer": 5
+        }
+    },
+    {
+        "id": 193,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de tonnes de plastique ont été extraites de l'océan Atlantique par Race for Water ?",
+        "specific": {
+            "answer": 100
+        }
+    },
+    {
+        "id": 194,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "Quel est le coût total estimé pour la tournée mondiale de Race for Water ?",
+        "specific": {
+            "answer": 15000000
+        }
+    },
+    {
+        "id": 195,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "Combien de technologies de production d'eau potable sont utilisées à bord du catamaran Race for Water ?",
+        "specific": {
+            "answer": 2
+        }
+    },
+    {
+        "id": 196,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "EASY",
+        "question": "Quel est le nom du projet phare de Race for Water visant à nettoyer les océans ?",
+        "specific": {
+            "answer": 1
+        }
+    },
+    {
+        "id": 197,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "MEDIUM",
+        "question": "Combien de villes ont été visitées lors de la tournée Race for Water en 2020 ?",
+        "specific": {
+            "answer": 50
+        }
+    },
+    {
+        "id": 198,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "HARD",
+        "question": "En 2022, combien de tonnes de plastique ont été collectées par les partenaires de Race for Water dans le monde entier ?",
+        "specific": {
+            "answer": 5000
+        }
+    },
+    {
+        "id": 199,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "DEVIL",
+        "question": "Combien de milliers de kilomètres le catamaran Race for Water a-t-il parcouru lors de sa tournée mondiale ?",
+        "specific": {
+            "answer": 120000
+        }
+    },
+    {
+        "id": 200,
+        "version": 1,
+        "type": "NEAREST",
+        "difficulty": "ANY",
+        "question": "En combien de jours le catamaran Race for Water a-t-il parcouru la distance entre la France et la Polynésie ?",
+        "specific": {
+            "answer": 40
+        }
+    }
+]
+
+

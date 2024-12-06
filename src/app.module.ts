@@ -1,11 +1,12 @@
 import {ClassSerializerInterceptor, Module} from "@nestjs/common";
 import {AppController} from "./app.controller";
-import {WebsocketModule} from "./websocket/websocket.module";
 import {ConfigModule} from "@nestjs/config";
 import {ScheduleModule} from "@nestjs/schedule";
 import {ThrottlerModule} from "@nestjs/throttler";
 import * as dotenv from "dotenv";
 import {APP_INTERCEPTOR} from "@nestjs/core";
+import {RoomsModule} from "./modules/rooms/rooms.module";
+import {StatisticsModule} from "./modules/statistics/statistics.module";
 
 dotenv.config();
 
@@ -18,7 +19,8 @@ dotenv.config();
             ttl: 60000,
             limit: 60,
         }]),
-        WebsocketModule,
+        RoomsModule,
+        StatisticsModule,
     ],
     providers: [
         {

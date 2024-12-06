@@ -22,6 +22,7 @@ enum QuestionTypes {
 }
 
 enum QuestionDifficulty {
+  ANY
   EASY
   MEDIUM
   HARD
@@ -40,12 +41,13 @@ model EndedRooms {
 }
 
 model Players {
-  id        Int     @id @default(autoincrement())
   name      String
   room_code String
   room      Rooms   @relation(fields: [room_code], references: [code], onDelete: Cascade)
+  score     Int     @default(0)
   owner     Boolean @default(false)
 
+  @@id([name, room_code])
   @@map("players")
 }
 
@@ -55,6 +57,7 @@ model Rooms {
   question_count      Int
   max_player_count    Int
   difficulty          QuestionDifficulty
+  started             Boolean             @default(false)
   created_at          DateTime            @default(now())
   players             Players[]
   room_done_questions RoomDoneQuestions[]
@@ -63,10 +66,12 @@ model Rooms {
 }
 
 model RoomDoneQuestions {
-  room_code   String
-  question_id Int
-  room        Rooms     @relation(fields: [room_code], references: [code], onDelete: Cascade)
-  question    Questions @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  room_code       String
+  room            Rooms     @relation(fields: [room_code], references: [code], onDelete: Cascade)
+  question_id     Int
+  question        Questions @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  question_number Int
+  ended_at        DateTime
 
   @@id([room_code, question_id])
   @@map("room_done_questions")
