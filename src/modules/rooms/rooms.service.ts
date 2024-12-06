@@ -208,7 +208,15 @@ export class RoomsService{
             await this.sleep(15000);
             currentQuestion++;
         }
-        this.roomsGatewayService.onRoomEnd(room.code, await this.getCurrentRoom(room.code));
+        const roomData: RoomDataResponse = await this.getCurrentRoom(room.code);
+        this.roomsGatewayService.onRoomEnd(room.code, roomData);
+        await this.prismaService.endedRooms.create({
+            data: {
+                player_count: roomData.players.length,
+                question_count: room.question_count,
+                scores: roomData.players.map((player: PlayerEntity) => player.score),
+            },
+        });
     }
 
     private async sleep(ms: number): Promise<void>{

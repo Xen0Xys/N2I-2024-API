@@ -6,6 +6,7 @@ import {ThrottlerModule} from "@nestjs/throttler";
 import * as dotenv from "dotenv";
 import {APP_INTERCEPTOR} from "@nestjs/core";
 import {RoomsModule} from "./modules/rooms/rooms.module";
+import {StatisticsModule} from "./modules/statistics/statistics.module";
 
 dotenv.config();
 
@@ -19,6 +20,7 @@ dotenv.config();
             limit: 60,
         }]),
         RoomsModule,
+        StatisticsModule,
     ],
     providers: [
         {
