@@ -13,6 +13,7 @@ import {AsyncApiPub} from "nestjs-asyncapi";
 import {RoomDataResponse} from "./models/responses/room-data.response";
 import {CountdownModel} from "./models/models/countdown.model";
 import {RoundStartResponse} from "./models/responses/round-start.response";
+import {RoundSummaryResponse} from "./models/responses/round-summary.response";
 
 @WebSocketGateway({
     namespace: "rooms",
@@ -93,5 +94,31 @@ export class RoomsGateway implements OnGatewayConnection, OnGatewayDisconnect{
             throw new WsException("No clients in room");
         this.roomClients.get(roomCode).forEach((client: any) => client.emit("onRoundStart", response));
         this.logger.log(`Round start emitted for room ${roomCode}`);
+    }
+
+    @AsyncApiPub({
+        channel: "onRoundSummary",
+        message: {
+            payload: RoundSummaryResponse,
+        },
+    })
+    onRoundSummary(roomCode: string, response: RoundSummaryResponse): void{
+        if(!this.roomClients.has(roomCode))
+            throw new WsException("No clients in room");
+        this.roomClients.get(roomCode).forEach((client: any) => client.emit("onRoundSummary", response));
+        this.logger.log(`Round end emitted for room ${roomCode}`);
+    }
+
+    @AsyncApiPub({
+        channel: "onRoomEnd",
+        message: {
+            payload: RoomDataResponse,
+        },
+    })
+    onRoomEnd(roomCode: string, response: RoomDataResponse): void{
+        if(!this.roomClients.has(roomCode))
+            throw new WsException("No clients in room");
+        this.roomClients.get(roomCode).forEach((client: any) => client.emit("onRoomEnd", response));
+        this.logger.log(`Room end emitted for room ${roomCode}`);
     }
 }

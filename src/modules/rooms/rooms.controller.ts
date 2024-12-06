@@ -6,6 +6,7 @@ import {TokenResponse} from "./models/responses/token.response";
 import {JoinRoomDto} from "./models/dto/join-room.dto";
 import {AuthGuard} from "./guards/auth.guard";
 import {EditRoomDto} from "./models/dto/edit-room.dto";
+import {RoomDataResponse} from "./models/responses/room-data.response";
 
 @Controller("rooms")
 @ApiTags("Rooms")
@@ -47,7 +48,7 @@ export class RoomsController{
     @Get("current")
     @UseGuards(AuthGuard)
     @ApiBearerAuth()
-    async getCurrentRoom(@Req() req: any): Promise<any>{
+    async getCurrentRoom(@Req() req: any): Promise<RoomDataResponse>{
         return await this.roomsService.getCurrentRoom(req.roomCode);
     }
 

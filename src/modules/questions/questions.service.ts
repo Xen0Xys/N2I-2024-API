@@ -1,4 +1,4 @@
-import {Injectable} from "@nestjs/common";
+import {Injectable, NotFoundException} from "@nestjs/common";
 import {PrismaService} from "../../common/services/prisma.service";
 import {QuestionDifficulty, Questions, RoomDoneQuestions} from "@prisma/client";
 import {
@@ -159,7 +159,7 @@ export class QuestionsService{
                 },
             });
         if(questions.length === 0)
-            return null;
+            throw new NotFoundException("No questions found");
         const question: Questions = questions[Math.floor(Math.random() * questions.length)];
         switch (question.type){
             case "TEXT":
@@ -268,20 +268,22 @@ export class QuestionsService{
                 question: true,
             },
         });
+        if(!rawQuestion)
+            throw new NotFoundException("No question found");
         let score: number;
         switch (rawQuestion.question.type){
             case "TEXT":
-                score = this.computeTextAnswer(await this.fetchTextQuestion(rawQuestion.id), answer, rawQuestion.ended_at);
+                score = this.computeTextAnswer(await this.fetchTextQuestion(rawQuestion.question.id), answer, rawQuestion.ended_at);
                 break;
             case "IMAGE":
             case "VIDEO":
-                score = this.computeMediaAnswer(await this.fetchMediaQuestion(rawQuestion.id), answer, rawQuestion.ended_at);
+                score = this.computeMediaAnswer(await this.fetchMediaQuestion(rawQuestion.question.id), answer, rawQuestion.ended_at);
                 break;
             case "NEAREST":
-                score = this.computeNearestAnswer(await this.fetchNearestQuestion(rawQuestion.id), answer, rawQuestion.ended_at);
+                score = this.computeNearestAnswer(await this.fetchNearestQuestion(rawQuestion.question.id), answer);
                 break;
             case "FILL":
-                score = this.computeFillAnswer(await this.fetchFillQuestion(rawQuestion.id), answer, rawQuestion.ended_at);
+                score = this.computeFillAnswer(await this.fetchFillQuestion(rawQuestion.question.id), answer, rawQuestion.ended_at);
                 break;
         }
         await this.prismaService.players.updateMany({
@@ -298,18 +300,51 @@ export class QuestionsService{
     }
 
     computeTextAnswer(question: IQuestion, answer: number[], endedAt: Date): number{
+        const specific: ITextQuestion = question.specific as ITextQuestion;
+        if(this.isArrayContainsAll(specific.answer, answer))
+            return this.computeTimeProrata(endedAt);
         return 0;
     }
 
     computeMediaAnswer(question: IQuestion, answer: number[], endedAt: Date): number{
+        const specific: IMediaQuestion = question.specific as IMediaQuestion;
+        if(this.isArrayContainsAll(specific.answer, answer))
+            return this.computeTimeProrata(endedAt);
         return 0;
     }
 
-    computeNearestAnswer(question: IQuestion, answer: number, endedAt: Date): number{
-        return 0;
+    computeNearestAnswer(question: IQuestion, answer: number): number{
+        const specific: IBeNearestQuestion = question.specific as IBeNearestQuestion;
+        return this.computeValueProrata(specific.answer, answer);
     }
 
     computeFillAnswer(question: IQuestion, answer: string, endedAt: Date): number{
+        if(question.specific.answer === answer)
+            return this.computeTimeProrata(endedAt);
         return 0;
+    }
+
+    isArrayContainsAll(array: number[], values: number[]): boolean{
+        return values.every((value: number) => array.includes(value));
+    }
+
+    computeTimeProrata(endedAt: Date): number{
+        // A round lasts 30 seconds, the maximum score is 1000 and the minimum score is 0. The maximum score can be reached by answering in the first 5 seconds.
+        const timeLeft: number = endedAt.getTime() - Date.now();
+        if(timeLeft <= 0 || timeLeft > 30000)
+            return 0;
+        if(timeLeft >= 25000)
+            return 1000;
+        return Math.floor(1000 * (timeLeft / 25000));
+    }
+
+    computeValueProrata(target: number, answer: number): number{
+        // The maximum score is 1000 and the minimum score is 0. The maximum score can be reached by answering the exact value +- 2.5%. The minimum score is reached by answering the exact value +- 25%.
+        const difference: number = Math.abs(target - answer);
+        if(difference === 0 || difference <= target * 0.025)
+            return 1000;
+        if(difference >= target * 0.25)
+            return 0;
+        return Math.floor(1000 * (1 - difference / (target * 0.25)));
     }
 }

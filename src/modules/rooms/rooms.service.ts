@@ -13,6 +13,9 @@ import {CountdownModel} from "./models/models/countdown.model";
 import {QuestionsService} from "../questions/questions.service";
 import {IQuestion} from "../questions/models/entities/questions.entities";
 import {RoundStartResponse} from "./models/responses/round-start.response";
+import {PlayerEntity} from "./models/entities/player.entity";
+import {RoomEntity} from "./models/entities/room.entity";
+import {RoundSummaryResponse} from "./models/responses/round-summary.response";
 
 @Injectable()
 export class RoomsService{
@@ -101,10 +104,12 @@ export class RoomsService{
                 questionCount: room.question_count,
                 maxPlayers: room.max_player_count,
                 started: room.started,
-            },
-            players: players.map((player: any) => ({
+            } as RoomEntity,
+            players: players.map((player: any): PlayerEntity => ({
                 name: player.name,
                 owner: player.owner,
+                score: player.score,
+                roomCode: player.room_code,
             })),
         });
     }
@@ -178,10 +183,11 @@ export class RoomsService{
         await this.sleep(5000);
         while(currentQuestion < room.question_count){
             const question: IQuestion = await this.questionsService.pickQuestion(room.code, room.difficulty);
+            const baseQuestion: IQuestion = JSON.parse(JSON.stringify(question));
             delete question.specific.answer;
             const roundStartResponse: RoundStartResponse = {
                 question,
-                endAt: new Date(Date.now() + 15000), // 15 seconds
+                endAt: new Date(Date.now() + 30000), // 30 seconds
             } as RoundStartResponse;
             await this.prismaService.roomDoneQuestions.create({
                 data: {
@@ -192,12 +198,17 @@ export class RoomsService{
                 },
             });
             this.roomsGatewayService.onRoundStart(room.code, roundStartResponse);
+            await this.sleep(30000);
+            const roundSummary: RoundSummaryResponse = {
+                players: (await this.getCurrentRoom(room.code)).players,
+                question: baseQuestion,
+                endAt: new Date(Date.now() + 15000), // 15 seconds
+            } as RoundSummaryResponse;
+            this.roomsGatewayService.onRoundSummary(room.code, roundSummary);
             await this.sleep(15000);
-            // Send question summary
-            // Start countdown
             currentQuestion++;
         }
-        // Send game summary without countdown
+        this.roomsGatewayService.onRoomEnd(room.code, await this.getCurrentRoom(room.code));
     }
 
     private async sleep(ms: number): Promise<void>{

@@ -1,19 +1,9 @@
-import {QuestionDifficulty} from "@prisma/client";
+import {PlayerEntity} from "../entities/player.entity";
+import {RoomEntity} from "../entities/room.entity";
 
 export class RoomDataResponse{
-    room: {
-        code: string;
-        name: string;
-        difficulty: QuestionDifficulty;
-        questionCount: number;
-        maxPlayers: number;
-        started: boolean;
-    };
-
-    players: {
-        name: string;
-        owner: boolean;
-    }[];
+    room: RoomEntity;
+    players: PlayerEntity[];
 
     constructor(partial: Partial<RoomDataResponse>){
         Object.assign(this, partial);
