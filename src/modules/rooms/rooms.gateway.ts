@@ -11,6 +11,8 @@ import {WsAuthGuard} from "./guards/ws-auth.guard";
 import {PrismaService} from "../../common/services/prisma.service";
 import {AsyncApiPub} from "nestjs-asyncapi";
 import {RoomDataResponse} from "./models/responses/room-data.response";
+import {CountdownModel} from "./models/models/countdown.model";
+import {RoundStartResponse} from "./models/responses/round-start.response";
 
 @WebSocketGateway({
     namespace: "rooms",
@@ -60,9 +62,36 @@ export class RoomsGateway implements OnGatewayConnection, OnGatewayDisconnect{
             payload: RoomDataResponse,
         },
     })
-    async onRoomUpdate(response: RoomDataResponse): Promise<void>{
+    onRoomUpdate(response: RoomDataResponse): void{
         if(!this.roomClients.has(response.room.code))
             throw new WsException("No clients in room");
         this.roomClients.get(response.room.code).forEach((client: any) => client.emit("update", response));
+        this.logger.log(`Update emitted for room ${response.room.code}`);
+    }
+
+    @AsyncApiPub({
+        channel: "onGameStart",
+        message: {
+            payload: CountdownModel,
+        },
+    })
+    onGameStart(roomCode: string, response: CountdownModel): void{
+        if(!this.roomClients.has(roomCode))
+            throw new WsException("No clients in room");
+        this.roomClients.get(roomCode).forEach((client: any) => client.emit("onGameStart", response));
+        this.logger.log(`Game start emitted for room ${roomCode}`);
+    }
+
+    @AsyncApiPub({
+        channel: "onRoundStart",
+        message: {
+            payload: RoundStartResponse,
+        },
+    })
+    onRoundStart(roomCode: string, response: RoundStartResponse): void{
+        if(!this.roomClients.has(roomCode))
+            throw new WsException("No clients in room");
+        this.roomClients.get(roomCode).forEach((client: any) => client.emit("onRoundStart", response));
+        this.logger.log(`Round start emitted for room ${roomCode}`);
     }
 }

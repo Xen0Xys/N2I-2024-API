@@ -66,4 +66,19 @@ export class RoomsController{
     async updateRoomSettings(@Req() req: any, @Body() body: EditRoomDto): Promise<void>{
         return await this.roomsService.updateRoomSettings(req.roomCode, req.playerName, body);
     }
+
+    /**
+     * Start the game
+     *
+     * @throws {401} Unauthorized
+     * @throws {403} Forbidden
+     * @throws {409} Room is already started
+     * @throws {500} Internal server error
+     */
+    @Post("start")
+    @UseGuards(AuthGuard)
+    @ApiBearerAuth()
+    async startGame(@Req() req: any): Promise<void>{
+        return await this.roomsService.startRoom(req.roomCode, req.playerName);
+    }
 }

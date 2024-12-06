@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "version": 1,
+        "type": "text",
+        "difficulty": "any",
+        "question": "Quelle est la couleur du cheval blanc d'Henry IV",
+        "specific": {
+            "candidates": [
+                "Blanc, t'es con ou quoi ?",
+                "Bleu, parce que c'est cool les Schtroumpfs !"
+            ],
+            "answer": [
+                0
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "version": 1,
+        "type": "image",
+        "difficulty": "any",
+        "question": "Quelle est la belle couleur du saumon ?",
+        "specific": {
+            "src": "",
+            "candidates": [
+                "Rose",
+                "Beige",
+                "Noir",
+                "Saumon, connard !"
+            ],
+            "answer": [
+                3
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "version": 1,
+        "type": "video",
+        "difficulty": "any",
+        "question": "Quelle est la recette pour les lingots de fer ?",
+        "specific": {
+            "src": "",
+            "candidates": [
+                "Minerai de fer, logique",
+                "J'sais pas, sûrement un truc dans le genre !"
+            ],
+            "answer": [
+                0
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "version": 1,
+        "type": "beNearest",
+        "difficulty": "any",
+        "question": "Quelle est la taille de ma bite ?",
+        "specific": {
+            "answer": 17
+        }
+    },
+    {
+        "id": 5,
+        "version": 1,
+        "type": "fillEmptySpaces",
+        "difficulty": "any",
+        "question": "Je suis un {0} de première {1}",
+        "specific": {
+            "candidates": [
+                "enculé",
+                "merci",
+                "bonsoir",
+                "classe",
+                "ferme",
+                "gueule"
+            ],
+            "answer": "Je suis un enculé de première classe"
+        }
+    }
+]

@@ -44,6 +44,7 @@ model Players {
   name      String
   room_code String
   room      Rooms   @relation(fields: [room_code], references: [code], onDelete: Cascade)
+  score     Int     @default(0)
   owner     Boolean @default(false)
 
   @@id([name, room_code])
@@ -65,10 +66,12 @@ model Rooms {
 }
 
 model RoomDoneQuestions {
-  room_code   String
-  question_id Int
-  room        Rooms     @relation(fields: [room_code], references: [code], onDelete: Cascade)
-  question    Questions @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  room_code       String
+  room            Rooms     @relation(fields: [room_code], references: [code], onDelete: Cascade)
+  question_id     Int
+  question        Questions @relation(fields: [question_id], references: [id], onDelete: Cascade)
+  question_number Int
+  ended_at        DateTime
 
   @@id([room_code, question_id])
   @@map("room_done_questions")

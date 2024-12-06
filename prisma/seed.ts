@@ -1,26 +1,24 @@
 import {PrismaClient} from "@prisma/client";
+import {QuestionsService} from "../src/modules/questions/questions.service";
+import {PrismaService} from "../src/common/services/prisma.service";
+import * as fs from "node:fs";
+import {IQuestion} from "../src/modules/questions/models/entities/questions.entities";
 
 // initialize Prisma Client
 const prisma = new PrismaClient();
+const prismaService = new PrismaService();
+const questionsService = new QuestionsService(prismaService);
 
 async function main(){
     const gStart = Date.now();
-    console.log(`\n✅  Seeding completed ! (${Date.now() - gStart}ms)`);
-}
 
-// eslint-disable-next-line @/no-unused-vars
-async function seed(table: any, data: any[]){
-    for(let i = 1; i <= data.length; i++){
-        await table.upsert({
-            where: {id: i},
-            update: {
-                ...data[i - 1],
-            },
-            create: {
-                ...data[i - 1],
-            },
-        });
+    const questions = JSON.parse(fs.readFileSync("./prisma/questions.json", "utf-8"));
+
+    for(const [id, question] of Object.entries(questions)){
+        await questionsService.upsertQuestion(parseInt(id) + 1, question as IQuestion);
     }
+
+    console.log(`\n✅  Seeding completed ! (${Date.now() - gStart}ms)`);
 }
 
 main().catch((e) => {
