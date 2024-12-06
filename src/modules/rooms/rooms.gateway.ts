@@ -1,6 +1,6 @@
-import {OnGatewayConnection, WebSocketGateway, WebSocketServer} from "@nestjs/websockets";
+import {OnGatewayConnection, OnGatewayDisconnect, WebSocketGateway, WebSocketServer} from "@nestjs/websockets";
 import {Server} from "socket.io";
-import {UseGuards} from "@nestjs/common";
+import {Logger, UseGuards} from "@nestjs/common";
 import {WsAuthGuard} from "./guards/ws-auth.guard";
 import {PrismaService} from "../../common/services/prisma.service";
 import {AsyncApiPub} from "nestjs-asyncapi";
@@ -13,9 +13,10 @@ import {RoomDataResponse} from "./models/responses/room-data.response";
     },
 })
 @UseGuards(WsAuthGuard)
-export class RoomsGateway implements OnGatewayConnection{
+export class RoomsGateway implements OnGatewayConnection, OnGatewayDisconnect{
+    private readonly logger: Logger = new Logger(RoomsGateway.name);
     @WebSocketServer() socket: Server;
-    private readonly roomClients: Map<string, string[]> = new Map<string, string[]>();
+    private readonly roomClients: Map<string, any[]> = new Map<string, any[]>();
 
     constructor(
         private readonly authGuardService: WsAuthGuard,
@@ -29,10 +30,21 @@ export class RoomsGateway implements OnGatewayConnection{
                 this.roomClients.set(client.handshake.roomCode, [client]);
             else
                 this.roomClients.get(client.handshake.roomCode).push(client);
-            console.log(this.roomClients);
+            this.logger.log(`Client ${client.handshake.playerName} connected to room ${client.handshake.roomCode}`);
         }catch(_: any){
             client.disconnect();
             return;
+        }
+    }
+
+    async handleDisconnect(client: any){
+        if(this.roomClients.has(client.handshake.roomCode)){
+            const index: number = this.roomClients.get(client.handshake.roomCode).indexOf(client);
+            if(index !== -1)
+                this.roomClients.get(client.handshake.roomCode).splice(index, 1);
+            if(this.roomClients.get(client.handshake.roomCode).length === 0)
+                this.roomClients.delete(client.handshake.roomCode);
+            this.logger.log(`Client ${client.handshake.playerName} disconnected from room ${client.handshake.roomCode}`);
         }
     }
 
