@@ -17,6 +17,7 @@ export class RoomsController{
     /**
      * Create a room
      *
+     * @throws {400} Invalid room settings
      * @throws {500} Internal server error
      */
     @Post("create")
@@ -27,6 +28,7 @@ export class RoomsController{
     /**
      * Join a room
      *
+     * @throws {400} Invalid room code
      * @throws {404} Room not found
      * @throws {409} Room is full
      * @throws {500} Internal server error
@@ -52,8 +54,10 @@ export class RoomsController{
     /**
      * Update room settings
      *
+     * @throws {400} Invalid room settings
      * @throws {401} Unauthorized
      * @throws {403} Forbidden
+     * @throws {409} Room is already started
      * @throws {500} Internal server error
      */
     @Put("settings")

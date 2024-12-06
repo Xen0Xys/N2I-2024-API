@@ -112,6 +112,13 @@ export class RoomsService{
         });
         if(!player.owner)
             throw new ForbiddenException("You are not the room owner");
+        const room: Rooms = await this.prismaService.rooms.findUnique({
+            where: {
+                code: roomCode,
+            },
+        });
+        if(room.started)
+            throw new ConflictException("Room has already started");
         await this.prismaService.rooms.update({
             where: {
                 code: roomCode,
