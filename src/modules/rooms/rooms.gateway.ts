@@ -6,10 +6,16 @@ import {PrismaService} from "../../common/services/prisma.service";
 import {AsyncApiPub} from "nestjs-asyncapi";
 import {RoomDataResponse} from "./models/responses/room-data.response";
 
-@WebSocketGateway({namespace: "rooms"})
+@WebSocketGateway({
+    namespace: "rooms",
+    cors: {
+        origin: "*",
+    },
+})
 @UseGuards(WsAuthGuard)
 export class RoomsGateway implements OnGatewayConnection{
     @WebSocketServer() socket: Server;
+    private readonly roomClients: Map<string, string[]> = new Map<string, string[]>();
 
     constructor(
         private readonly authGuardService: WsAuthGuard,
@@ -19,6 +25,11 @@ export class RoomsGateway implements OnGatewayConnection{
     async handleConnection(client: any){
         try{
             await this.authGuardService.authenticate(client.handshake);
+            if(!this.roomClients.has(client.handshake.roomCode))
+                this.roomClients.set(client.handshake.roomCode, [client]);
+            else
+                this.roomClients.get(client.handshake.roomCode).push(client);
+            console.log(this.roomClients);
         }catch(_: any){
             client.disconnect();
             return;
@@ -32,6 +43,6 @@ export class RoomsGateway implements OnGatewayConnection{
         },
     })
     async onRoomUpdate(response: RoomDataResponse): Promise<void>{
-        this.socket.emit("update", response);
+        this.roomClients.get(response.room.code).forEach((client: any) => client.emit("update", response));
     }
 }

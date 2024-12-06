@@ -12,6 +12,8 @@ import {EditRoomDto} from "./models/dto/edit-room.dto";
 
 @Injectable()
 export class RoomsService{
+    private readonly games: Promise<void>[] = [];
+
     constructor(
         private readonly prismaService: PrismaService,
         private readonly jwtService: JwtService,
@@ -131,5 +133,34 @@ export class RoomsService{
             },
         });
         await this.roomsGatewayService.onRoomUpdate(await this.getCurrentRoom(roomCode));
+    }
+
+    async startRoom(roomCode: string): Promise<void>{
+        const room: Rooms = await this.prismaService.rooms.findUnique({
+            where: {
+                code: roomCode,
+            },
+        });
+        if(!room)
+            throw new NotFoundException("Room not found");
+        if(room.started)
+            throw new ConflictException("Room has already started");
+        await this.prismaService.rooms.update({
+            where: {
+                code: roomCode,
+            },
+            data: {
+                started: true,
+            },
+        });
+        this.games.push(this.runGame());
+    }
+
+    private async runGame(): Promise<void>{
+
+    }
+
+    private async sleep(ms: number): Promise<void>{
+        return new Promise((resolve: any) => setTimeout(resolve, ms));
     }
 }
