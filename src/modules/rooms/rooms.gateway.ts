@@ -1,4 +1,10 @@
-import {OnGatewayConnection, OnGatewayDisconnect, WebSocketGateway, WebSocketServer} from "@nestjs/websockets";
+import {
+    OnGatewayConnection,
+    OnGatewayDisconnect,
+    WebSocketGateway,
+    WebSocketServer,
+    WsException,
+} from "@nestjs/websockets";
 import {Server} from "socket.io";
 import {Logger, UseGuards} from "@nestjs/common";
 import {WsAuthGuard} from "./guards/ws-auth.guard";
@@ -55,6 +61,8 @@ export class RoomsGateway implements OnGatewayConnection, OnGatewayDisconnect{
         },
     })
     async onRoomUpdate(response: RoomDataResponse): Promise<void>{
+        if(!this.roomClients.has(response.room.code))
+            throw new WsException("No clients in room");
         this.roomClients.get(response.room.code).forEach((client: any) => client.emit("update", response));
     }
 }

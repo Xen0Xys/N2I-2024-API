@@ -78,7 +78,6 @@ export class RoomsService{
     }
 
     async getCurrentRoom(roomCode: string): Promise<RoomDataResponse>{
-        console.log(roomCode);
         const room: Rooms = await this.prismaService.rooms.findUnique({
             where: {
                 code: roomCode,
