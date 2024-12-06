@@ -187,7 +187,7 @@ export class RoomsService{
             delete question.specific.answer;
             const roundStartResponse: RoundStartResponse = {
                 question,
-                endAt: new Date(Date.now() + 30000), // 30 seconds
+                endAt: new Date(Date.now() + 25000), // 25 seconds
             } as RoundStartResponse;
             await this.prismaService.roomDoneQuestions.create({
                 data: {
@@ -198,14 +198,14 @@ export class RoomsService{
                 },
             });
             this.roomsGatewayService.onRoundStart(room.code, roundStartResponse);
-            await this.sleep(30000);
+            await this.sleep(25000);
             const roundSummary: RoundSummaryResponse = {
                 players: (await this.getCurrentRoom(room.code)).players,
                 question: baseQuestion,
-                endAt: new Date(Date.now() + 15000), // 15 seconds
+                endAt: new Date(Date.now() + 10000), // 10 seconds
             } as RoundSummaryResponse;
             this.roomsGatewayService.onRoundSummary(room.code, roundSummary);
-            await this.sleep(15000);
+            await this.sleep(10000);
             currentQuestion++;
         }
         const roomData: RoomDataResponse = await this.getCurrentRoom(room.code);

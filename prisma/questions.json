@@ -1055,7 +1055,8 @@
                 "réduire",
                 "détruire",
                 "protéger",
-                "analyser"
+                "analyser",
+                "sensibles"
             ],
             "answer": "L'association Race for Water a pour objectif principal de préserver l'eau potable dans les zones sensibles."
         }
@@ -1077,7 +1078,8 @@
                 "drones",
                 "robots",
                 "plastiques recyclés",
-                "panneaux solaires"
+                "panneaux solaires",
+                "salée"
             ],
             "answer": "L'un des projets de Race for Water se concentre sur l'utilisation de l'énergie solaire pour purifier l'eau salée."
         }
@@ -1096,6 +1098,7 @@
                 "navire",
                 "hydroplane",
                 "voile",
+                "nettoyer",
                 "éolienne",
                 "solaire",
                 "batteries",
@@ -1120,6 +1123,7 @@
                 "capitales",
                 "pays industrialisés",
                 "territoires",
+                "insuffisantes",
                 "îles",
                 "océans"
             ],
@@ -1143,6 +1147,7 @@
                 "outils",
                 "robots",
                 "stratégies",
+                "l'accès à l'eau",
                 "projets communautaires"
             ],
             "answer": "Race for Water œuvre pour la protection de l'eau en développant des systèmes innovants pour réduire la pollution plastique et améliorer l'accès à l'eau dans les pays vulnérables."
@@ -1158,6 +1163,7 @@
             "candidates": [
                 "réduire",
                 "collecter",
+                "dispositifs de collecte",
                 "protéger",
                 "développer",
                 "construire",
@@ -1184,6 +1190,7 @@
                 "50",
                 "25",
                 "2",
+                "jour",
                 "1",
                 "500",
                 "1000",
@@ -1219,7 +1226,7 @@
         "version": 1,
         "type": "FILL",
         "difficulty": "HARD",
-        "question": "Pour soutenir les actions de Race for Water, il est essentiel de {0} les efforts internationaux pour un {1} de l'eau dans les zones à risque.",
+        "question": "Pour soutenir les actions de Race for Water, il est essentiel de {0} les efforts internationaux pour un {1} à l'eau dans les zones à risque.",
         "specific": {
             "candidates": [
                 "accélérer",
@@ -1229,6 +1236,7 @@
                 "investir",
                 "augmenter",
                 "construire",
+                "accès durable",
                 "planifier",
                 "réduire",
                 "développer"
@@ -1250,6 +1258,7 @@
                 "programmes",
                 "politiques",
                 "opérations",
+                "réduire",
                 "systèmes",
                 "mesures",
                 "protocoles",
@@ -1266,6 +1275,7 @@
         "question": "Race for Water a développé un {0} pour collecter les plastiques flottants dans les océans et prévenir leur {1}.",
         "specific": {
             "candidates": [
+                "accumulation",
                 "appareil",
                 "bateau",
                 "dispositif",
@@ -1291,6 +1301,7 @@
                 "technologies de filtration",
                 "dispositifs solaires",
                 "installations mobiles",
+                "l'énergie renouvelable",
                 "réseaux hydrauliques",
                 "moteurs thermiques",
                 "robots",
@@ -1310,6 +1321,7 @@
         "specific": {
             "candidates": [
                 "plastiques",
+                "espèces marines",
                 "pollutions",
                 "déchets",
                 "microplastiques",
@@ -1336,6 +1348,7 @@
                 "fondations",
                 "universités",
                 "entreprises",
+                "durabilité",
                 "ONG",
                 "partenaires",
                 "fournisseurs",
@@ -1362,6 +1375,7 @@
                 "groupe",
                 "équipe",
                 "atelier",
+                "défis",
                 "projet"
             ],
             "answer": "Dans le cadre de sa mission, Race for Water a mis en place un réseau d'experts en technologies écologiques pour résoudre les défis liés à l'accès à l'eau potable."
@@ -1377,6 +1391,7 @@
             "candidates": [
                 "campagnes",
                 "supports",
+                "gestion",
                 "événements",
                 "ateliers",
                 "formations",
@@ -1400,6 +1415,7 @@
                 "investissements",
                 "subventions",
                 "fonds",
+                "engagées",
                 "contrats",
                 "accords",
                 "financements",
@@ -1427,6 +1443,7 @@
                 "développements",
                 "prototypages",
                 "analyses de risques",
+                "experts",
                 "collaborations",
                 "observations"
             ],
@@ -1446,7 +1463,7 @@
                 "développement",
                 "traitement",
                 "service",
-                "impact",
+                "impacts",
                 "transfert",
                 "équité",
                 "progrès",
@@ -1472,7 +1489,8 @@
                 "perfectionner",
                 "inventer",
                 "adapter",
-                "installer"
+                "installer",
+                "régions"
             ],
             "answer": "Les efforts de Race for Water ont permis de développer des solutions technologiques pour filtrer l'eau, en particulier dans les régions frappées par la sécheresse."
         }
@@ -1491,6 +1509,7 @@
                 "inverser",
                 "diminuer",
                 "réhabiliter",
+                "tortues marines",
                 "atténuer",
                 "augmenter",
                 "analyser",
@@ -1510,6 +1529,7 @@
                 "technologies",
                 "robots",
                 "drones",
+                "matériaux utilisables",
                 "capteurs",
                 "véhicules",
                 "bâtiments",
@@ -1537,6 +1557,7 @@
                 "ateliers",
                 "conférences",
                 "expéditions",
+                "l'environnement",
                 "formations"
             ],
             "answer": "L'association Race for Water organise régulièrement des événements pour sensibiliser les jeunes générations aux enjeux de l'eau et de l'environnement."
@@ -1551,13 +1572,14 @@
         "specific": {
             "candidates": [
                 "laboratoires",
-                "stations",
+                "stations mobiles",
                 "technologies",
                 "pilotes",
                 "centres de test",
                 "unités mobiles",
                 "solutions",
                 "experts",
+                "l'eau potable",
                 "infrastructures"
             ],
             "answer": "Race for Water a créé des stations mobiles afin de tester de nouvelles solutions de filtration dans des zones avec un accès difficile à l'eau potable."
@@ -1597,7 +1619,7 @@
                 "stations mobiles",
                 "systèmes de filtration",
                 "batteries",
-                "panneaux solaires",
+                "l'énergie solaire",
                 "réservoirs",
                 "éoliennes",
                 "réseaux hydrauliques"
@@ -1617,6 +1639,7 @@
                 "accords",
                 "projets",
                 "collaborations",
+                "solutions",
                 "partenaires",
                 "contrats",
                 "initiatives",
@@ -1643,6 +1666,7 @@
                 "produits chimiques",
                 "réductions",
                 "contaminants",
+                "prévention",
                 "particules",
                 "effluents"
             ],
@@ -1663,6 +1687,7 @@
                 "fournisseurs",
                 "générosités",
                 "investisseurs",
+                "nettoyage",
                 "fondations",
                 "entreprises",
                 "gouvernements"
@@ -1685,6 +1710,7 @@
                 "technologies de pointe",
                 "stations mobiles",
                 "technologies innovantes",
+                "déchets",
                 "processus",
                 "solutions techniques"
             ],
@@ -1718,12 +1744,13 @@
         "version": 1,
         "type": "FILL",
         "difficulty": "EASY",
-        "question": "Race for Water se concentre principalement sur la collecte des {0} flottants pour préserver les {1} marines.",
+        "question": "Race for Water se concentre principalement sur la collecte des {0} flottants pour préserver les {1} marins.",
         "specific": {
             "candidates": [
                 "plastiques",
                 "déchets",
                 "réseaux",
+                "écosystèmes",
                 "microplastiques",
                 "détritus",
                 "résidus",
@@ -1739,7 +1766,7 @@
         "version": 1,
         "type": "FILL",
         "difficulty": "MEDIUM",
-        "question": "Les actions de Race for Water ont pour but de protéger les {0} marins, en particulier les {1}, menacées par la pollution plastique.",
+        "question": "Les actions de Race for Water ont pour but de protéger les {0} marines, en particulier les {1}, menacées par la pollution plastique.",
         "specific": {
             "candidates": [
                 "espèces",
@@ -1747,6 +1774,7 @@
                 "tortues",
                 "poissons",
                 "mammifères",
+                "espèces",
                 "algues",
                 "planctons",
                 "bactéries",
@@ -1770,6 +1798,7 @@
                 "vaisseaux",
                 "solutions",
                 "systèmes",
+                "déchets plastiques",
                 "structures",
                 "programmes",
                 "produits"
@@ -1787,6 +1816,7 @@
             "candidates": [
                 "zones",
                 "problèmes",
+                "pollution",
                 "régions",
                 "milieux",
                 "pays",
@@ -1811,6 +1841,7 @@
                 "stations",
                 "robots",
                 "dispositifs",
+                "régions",
                 "solutions",
                 "programmes",
                 "unités",
@@ -1833,6 +1864,7 @@
                 "solutions",
                 "inventions",
                 "stratégies",
+                "collaborative",
                 "technologies",
                 "partenariats",
                 "réseaux"
@@ -1845,7 +1877,7 @@
         "version": 1,
         "type": "FILL",
         "difficulty": "HARD",
-        "question": "Race for Water a mis en place des {0} pour analyser et répertorier les effets de la pollution plastique sur les {1} marines.",
+        "question": "Race for Water a mis en place des {0} pour analyser et répertorier les effets de la pollution plastique sur les {1} marins.",
         "specific": {
             "candidates": [
                 "missions",
@@ -1854,6 +1886,7 @@
                 "recherches",
                 "laboratoires",
                 "études",
+                "écosystèmes",
                 "experts",
                 "analyses",
                 "systèmes"
@@ -1877,6 +1910,7 @@
                 "réduction",
                 "soutien",
                 "réhabilitation",
+                "durable",
                 "adaptation"
             ],
             "answer": "Race for Water met l'accent sur l'importance de la protection pour maintenir l'équilibre des écosystèmes et garantir un avenir durable pour les océans."
@@ -1898,6 +1932,7 @@
                 "programmes",
                 "initiatives",
                 "nettoyages",
+                "communautés",
                 "collectes"
             ],
             "answer": "Les actions de Race for Water incluent des événements pour nettoyer les plages et sensibiliser les communautés aux dangers du plastique dans les océans."
